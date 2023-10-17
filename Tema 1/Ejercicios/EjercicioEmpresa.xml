@@ -1,0 +1,47 @@
+<organzacion>
+	<departamentos>
+		<departamento codigo="Calidad">
+			<jefe>
+					<apellidos> </apellidos>
+					<nombre> </nombre>
+				</nobreCompuesto>
+			</jefe>	
+			<empleado>
+				<apellidos> </apellidos>
+				<nombre> </nombre>
+			</empleado>	
+			<empleado>
+				<apellidos> </apellidos>
+				<nombre> </nombre>
+			</empleado>	
+		</departamento>
+		<departamento codigo="RRHH">
+			<jefe>
+					<apellidos> </apellidos>
+					<nombre> </nombre>
+			</jefe>	
+			<empleado>
+				<apellidos> </apellidos>
+				<nombre> </nombre>
+			</empleado>	
+			<empleado>
+				<apellidos> </apellidos>
+				<nombre> </nombre>
+			</empleado>	
+		</departamento>
+		<departamento codigo="Contabilidad">
+			<jefe>
+					<apellidos> </apellidos>
+					<nombre> </nombre>
+			</jefe>	
+			<empleado>
+				<apellidos> </apellidos>
+				<nombre> </nombre>
+			</empleado>	
+			<empleado>
+				<apellidos> </apellidos>
+				<nombre> </nombre>
+			</empleado>	
+		</departamento>
+	</departamentos>	
+</organzacion>	

@@ -1,0 +1,55 @@
+<noticia>   <!--etiqueta inicio-->
+	<lugar>			<!--lugar es un elemento, desde la etiqueta de inicio al fin-->
+		<poblacion>Ciudad</poblacion> 
+		<nombre>Madrid</nombre>
+	</lugar>
+	<fecha>01/07/2023</fecha>
+	<desc>Se se oh là là</desc>
+</noticia>	<!--etiqueta fin-->
+
+
+
+
+
+
+<biblioteca>
+	<libro>
+		<titulo>
+			<original>La Vérité sur l’affaire Harry Quebert </original> 
+			<traduccion>La verdad sobre el caso Harry Quebert</nombre>
+		</titulo>
+		<fecha>19/09/2012</fecha>
+		<autor>
+			<nombre>Joël</nombre>
+			<apellido>Dicker</apellido>
+		</autor>
+		<pais codigo="CH">Suiza</pais>
+		<isbn>978-2877068161</isbn>
+	</libro>
+	<libro>
+		<titulo>
+			<original>Nineteen Eighty-Four</original> 
+			<traduccion>1984 </nombre>
+		</titulo>
+		<fecha>1985</fecha>
+		<autor>
+			<nombre>George</nombre>
+			<apellido>Orwell</apellido>
+		</autor>
+		<pais codigo="GBR">Reino Unido</pais>
+		<isbn>9788499890944</isbn>
+	</libro>
+	<libro>
+		<titulo>
+			<original>El amor en los tiempos del cólera </original> 
+			<traduccion>El amor en los tiempos del cólera</nombre>
+		</titulo>
+		<fecha>1910</fecha>
+		<autor>
+			<nombre>Gabriel</nombre>
+			<apellido>García Márquez</apellido>
+		</autor>
+		<pais codigo="CO">Colombia</pais>
+		<isbn>9788439735427</isbn>
+	</libro>
+</biblioteca>

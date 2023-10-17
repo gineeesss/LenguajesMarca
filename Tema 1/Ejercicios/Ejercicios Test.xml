@@ -1,0 +1,100 @@
+<!--Ejercicio 1. Los lenguajes de marcas se utilizan para:
+a) Dar formato a los documentos de texto.
+b) Definir la estructura de los datos de un documento.
+c) Permitir el intercambio de ficheros entre diferentes aplicaciones y
+plataformas.
+d) Todas las anteriores. 
+	D
+-->
+
+<!-- Ejercicio 2. Abre la página www.google.es en su explorador Google
+Chrome. Pulse el botón derecho del ratón y marque la opción "Ver código
+fuente de la página". ¿Qué tipo de lenguaje de marcado se emplea? ¿Qué
+lenguaje de marcado se empela? 
+	Html
+-->
+
+<!--Ejercicio 3. Busca información sobre el lenguaje de marcas XHTML. ¿Qué
+diferencias existe entre con HTML?
+
+Sintaxis: En XHTML es más estricta que en Html.
+Semántica: XHTML se centra en la Semánticay separa estrictamente la forma del contenido
+Validación: XHTML se pedde validar facilente utilizando erramientas de validación XML esándar.
+Compatibilidad: Ciertos navegadores web pueden tener problemass para interpretar correctamente el codigo XHTML si no sigue la sintaxis correcta.
+-->
+
+<!--Ejercicio 4. ¿En qué se diferencia un lenguaje de marcas a un lenguaje de
+programación?
+Principalmente, los lenguajes de marca se utilizan para estructurar y representar inforación en un formato legible tanto para humanos como para
+máquinas, mientras que los de programación son un conjunto de instrucciones que se utilizan para controlar el comportamiento de una maquina o sistema informatico
+-->
+
+<!--Ejercicio 5. Indica las etiquetas, los elementos y los atributos que se
+encuentran en el siguiente texto: -->
+<noticia>
+	<lugar> Madrid </lugar >
+	<fecha> 17/09/2021 </fecha>
+	<desc> Se ha inaugurado una estación de tren. </desc>
+</noticia>
+<!--
+Noticia, lugar, fecha y desc son etiquetas, 
+elementos son las etiquetas que están combinadas con un contenido
+-->
+
+<!-- Ejercicio 6. Busca información en Internet sobre las organizaciones ISO y W3C.
+ISO: La Organización Internacional de Normalización es una organización para la creación de estándares internacionales compuesta por diversas organizaciones nacionales de normalización
+W3C: Es un consorcio internacional que genera recomendaciones y estándares que aseguran el crecimiento de la WWW a largo plazo.
+-->
+
+<!--Ejercicio 7. Indicar cuál de las siguientes afirmaciones es cierta:
+a) LaTeX es un lenguaje orientado a presentación.
+b) LaTeX es un lenguaje procedural.
+c) LaTeX es un lenguaje descriptivo.
+	B, Procedural
+-->
+
+<!--Ejercicio 8. Indicar cuál de las siguientes afirmaciones es cierta:
+a) El consorcio W3C comenzó una iniciativa para intentar dotar a la web de
+un lenguaje más potente y que pudiera dar una estructurar semántica a
+la misma.
+b) ISO comenzó una iniciativa para intentar dotar a la web de un lenguaje
+más potente y que pudiera dar una estructurar semántica a la misma.
+c) El lenguaje GML fue propuesto por el consorcio W3C.
+	A
+-->
+
+<!--Ejercicio 9. Indicar cuál de las siguientes afirmaciones es cierta:
+a) Algunos elementos no tienen contenido. Se les denomina elementos
+vacíos y no deben llevar etiqueta de fin.
+b) Todos los elementos tienen que llevar obligatoriamente etiqueta de inicio
+y de final.
+c) Un atributo es un nombre que se encuentra dentro de la etiqueta de
+inicio de un elemento		
+	A
+-->
+
+
+<!--Ejercicio 10. Indicar cuál de las siguientes afirmaciones esfalsa:
+a) En la DTD se identifica la estructura del documento.
+b) Las DTD pueden ser internas o externas a un documento, o ambas
+cosas a la vez.
+c) En la DTD no se definen todos los elementos
+	A
+-->
+
+
+<!--Ejercicio 11. Indicar cuál de las siguientes afirmaciones es falsa:
+a) XML Schema es la evolución de la DTD descrita por el W3C.
+b) A XML Schema también se le denomina XSD.
+c) A XML Schema también se le denomina RELAX NG
+	C
+-->
+
+
+<!--Ejercicio 12. Indicar cuál de las siguientes afirmaciones es falsa:
+a) El modelo de datos de XML Schema incluye el vocabulario.
+b) El modelo de datos de XML Schema no incluye los tipos de datos.
+c) El modelo de datos de XML Schema incluye los elementos.
+	C
+-->
+
