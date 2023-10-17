@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="utf-8">
-<title>Glosario</title>
+    <meta charset="utf-8">
+    <title>Glosario</title>
 </head>
+
 <body>
-<h2>Indice</h2>
+    <h2>Indice</h2>
     <ol>
-        <li><a href="#enlaces">Enlaces</a></li>
+        <li><a href="#estilo_texto">Estilo Texto y citas</a></li>
         <li><a href="#listas">Listas</a>
-        <ol><li><a href="#listaDesordenada">Listas Desordenadas</a></li>
-            <li><a href="#listaOrdenada">Listas Ordenadas</a></li></ol></li>
+            <ol>
+                <li><a href="#listaDesordenada">Listas Desordenadas</a></li>
+                <li><a href="#listaOrdenada">Listas Ordenadas</a></li>
+            </ol>
+        </li>
+        <li><a href="#definiciones">Defeniciones</a></li>
+        <li><a href="#enlaces">Enlaces</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+
     </ol>
-<p> Es un ejemplo de codio JavaScript</p>
+    <hr>
+    <h2 id="estilo_texto">Estilos</h2>
+    <p> Es un ejemplo de codio JavaScript</p>
     <code>
         windows.onload=function(){<br>
             alerta("Hola");<br>
         }
     </code>
-<p>La etiqueta pre preforatea el codigo para que se vea como en el codigo fuente</p>
+    <p>La etiqueta pre preforatea el codigo para que se vea como en el codigo fuente</p>
 
     <code>
         <pre>
@@ -27,28 +38,28 @@ windows.onload=function(){
 }
         </pre>
     </code>
-</p>
+    </p>
 
     <p>La etiqueta samp simula el texto de las consolas</p>
     <p><samp>Presiona F1 para continuar</samp></p>
 
     <p>para citar se usa la etiqueta blockquote cite='url'</p>
     <blockquote cite="https://psicologiaymente.com/reflexiones/frases-bonitas-cortas"></blockquote>
-   
-    <p><q cite ="https://psicologiaymente.com/reflexiones/frases-bonitas-cortas">
-        Para citar se puede usar q, y con q cite"url"
-    </q></p> 
+
+    <p><q cite="https://psicologiaymente.com/reflexiones/frases-bonitas-cortas">
+            Para citar se puede usar q, y con q cite"url"
+        </q></p>
 
     <p>Hola soy un raton y un mando <cite>cita en cursiva</cite>.</p>
 
     <p>Para etiquetas direcciones se usa adress</p>
-        <adress>
-            Centro<br>
-            Avenida<br>
-            Cod. Pos.<br>
-            Ciudad <br>
-            Pais
-        </adress>
+    <adress>
+        Centro<br>
+        Avenida<br>
+        Cod. Pos.<br>
+        Ciudad <br>
+        Pais
+    </adress>
     <i>
         Centro<br>
         Avenida<br>
@@ -56,26 +67,27 @@ windows.onload=function(){
         Ciudad <br>
         Pais
     </i>
-<hr> 
-<h2 id="listas">Listas</h2>   
-<h3 id="listaDesordenada">Listas Desordenadas</h3>
-<p>Para escribir unaetiqueta no ordenada se usa la etiqueta ul, y todo lo que vaya dentro tiene que ir con una etiqueta li</p>
-    <ul type ="square">
+    <hr>
+    <h2 id="listas">Listas</h2>
+    <h3 id="listaDesordenada">Listas Desordenadas</h3>
+    <p>Para escribir unaetiqueta no ordenada se usa la etiqueta ul, y todo lo que vaya dentro tiene que ir con una
+        etiqueta li</p>
+    <ul type="square">
         <li>Agua</li>
         <li>Cuadrado</li>
         <li></li>
         <li>Escribiendo type="square" en la etiqueta ul</li>
     </ul>
-    <ul type ="circle">
+    <ul type="circle">
         <li>Circulo</li>
         <li>Escribiendo type="circle" en la etiqueta ul</li>
     </ul>
-<h3 id="listaOrdenada">Lista Ordenada</h3>
-<p>Lista ordendada</p>
+    <h3 id="listaOrdenada">Lista Ordenada</h3>
+    <p>Lista ordendada</p>
     <ol>
         <li>Primera fila</li>
         <li>Segunda fila</li>
-    </ol>    
+    </ol>
     <ol type="i" start="7" reversed>
         <li>Con type = "A" entonces enumera con letras mayusculas</li>
         <li>Con type = "a" entonces enumera con letras minusculas</li>
@@ -83,7 +95,7 @@ windows.onload=function(){
         <li>Con start "7" empieza desde la posición 7</li>
         <li>Con reversed empieza desde el final</li>
     </ol>
-<p>Anidar lista usando etiqueta de lita "ul" dentro de las etiquetas li</p>
+    <p>Anidar lista usando etiqueta de lita "ul" dentro de las etiquetas li</p>
     <ul>
         <li>Bebidas
             <ul>
@@ -107,42 +119,208 @@ windows.onload=function(){
                 <li>Huevos</li>
                 <li>Tambien se puede poner parrafos en la lista</li>
                 <li>Pan
-                    El pan, del latín panis, es un alimento básico que forma parte de la dieta tradicional 
+                    El pan, del latín panis, es un alimento básico que forma parte de la dieta tradicional
                     en Europa, Medio Oriente, India, América y Oceanía. <p>Se suele preparar mediante el horneado
-                     de una masa, elaborada fundamentalmente con harina de cereal, agua y sal
-                </p></li>
+                        de una masa, elaborada fundamentalmente con harina de cereal, agua y sal
+                    </p>
+                </li>
             </ul>
         </li>
     </ul>
-<p>Paar hacer una lista de eficiniciones se usa la etiqueta dl, y dt y dd para el termiino y su definicion respectivamente</p>
-<dl>
-    <dt>Coche:</dt>
-    <dd>Vehículo de cuatro ruedas.</dd>
+    <p id="definiciones">Paar hacer una lista de eficiniciones se usa la etiqueta dl, y dt y dd para el termiino y su
+        definicion respectivamente</p>
+    <dl>
+        <dt>Coche:</dt>
+        <dd>Vehículo de cuatro ruedas.</dd>
 
-    <dt>Moto:</dt>
-    <dd>Vehiculo de dos ruedas.</dd>
-</dl>
-<hr>
-<h2 id="enlaces">Enlaces</h2>
-<p>Etiqueta enlace -> a href=""
-    <br><a href="https://www.google.com" target="_blank">href="direccion a enlazar"</a>-> para poner un enlace podemos usar la etiqueta junto a
-    <br> target="_blank" -> te abre una pestaña nueva 
-    <br> target="_self" -> es el que viene default
-    <br>href="index2.html" podemos enlazar a un archivo local
-    <br>href="#sitioId" podemos enlazar a un apartado del html
-    <br>id="sitioId"  tenemos que indiar allí donde queramos enlazar
-    <br><a href="/index.html">href="/index.html"</a> podemos abrir otro documento en cualquier direccion
-    <br><a href="/../Pruebas/index.html">href="../../Pruebas/index.html"</a>podemos tanto retroceder como avanzar en los repositorios
-    <br><img src="../images/hola.jpg" alt="hola" height="155" width="150">
-     <br>img src="../images/hola.jpg 
-     <br>alt="hola" -> etiqueta obligatoria para cuando hay un problema con la presentacion de la imagen, vemos el texto
-     <br>height="155" -> ajusta la altura
-     <br>width="150" -> ajusta el ancho de la imagen, si se cambia solo el ancho, la altura se ajusta (con width: numero% se ajusta al porcentaje de la pantalla que se indique)
-</p>
+        <dt>Moto:</dt>
+        <dd>Vehiculo de dos ruedas.</dd>
+    </dl>
+    <hr>
+    <h2 id="enlaces">Enlaces</h2>
+    <p>Etiqueta enlace -> a href=""
+        <br><a href="#"> <strong>&lthref="#"&gt</strong></a> es una practica abitual, recarga la pagina
+        <br><a href="https://www.google.com" target="_blank"><strong>&lthref="direccion a enlazar"&gt</strong></a>para poner un enlace podemos usar la etiqueta junto a
+        <br><strong>&lta href="..." target="_blank"&gt</strong> te abre en una pestaña nueva
+        <br><strong>&lta href="..." target="_self"&gt</strong> es el que viene default
+        <br><strong>&lta href="index2.html"&gt</strong> podemos enlazar a un archivo local
+        <br><strong>&lta href="#sitioId"&gt</strong> podemos enlazar a un apartado del html
+        <br><strong>&lth1/p... id="sitioId"&gt</strong> tenemos que indiar allí donde queramos enlazar
+        <br><a href="/index.html"><strong>&lta href="/index.html"&gt</strong></a> podemos abrir otro documento en cualquier direccion
+        <br><a href="/../Pruebas/index.html"><strong>&ltahref="../../Pruebas/index.html"&gt</strong></a>podemos tanto retroceder como avanzar enlos repositorios
+        <br><img src="../images/hola.jpg" alt="hola" height="155" width="150">
+        <br><strong>&ltimg src="../images/hola.jpg&gt</strong>
+        <br>alt="hola" -> etiqueta obligatoria para cuando hay un problema con la presentacion de la imagen, vemos el
+        texto
+        <br>height="155" -> ajusta la altura
+        <br>width="150" -> ajusta el ancho de la imagen, si se cambia solo el ancho, la altura se ajusta (con width:
+        numero% se ajusta al porcentaje de la pantalla que se indique)
+    </p>
+
+    <h2 id="tabas">Tablas</h2>
+    <p>Para definir tabla se usa la etiqueta <strong>&lttabla&gt</strong>, dentro de ella están las filas
+        <strong>&lttr&gt</strong> y luego las celdas <strong>&lttd&gt</strong>
+        <br><strong>&lttborder="nºpx"&gt</strong> atributo dentro de la etiqueta tabla, se definen bordes
+        <br><strong>&ltth&gt</strong> en lugar de td define el caracter del la celda como encabezado
+        <br><strong>&ltCaption&gt</strong> se usa para el titulo de la tabla <strong>&lt/caption&gt</strong>
+        <br>Al igual que en un codigo html se puede dividir la tabla <strong>&ltthead&gt</strong> en head y body usando
+        <strong>&lttbody&gt</strong>
+        <br><strong>&lttable width="nº"&gt</strong> para definir el ancho de la celda, se puede usar tambien en % para
+        que se extienda el porcentaje de la página deseado
+    </p>
+    <table border="1px">
+        <caption>ejemplo</caption>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+        </tr>
+    </table>
+    <p></p>
+    <table border="1px">
+        <caption>Horario</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:15</td>
+                <td>BBDD</td>
+                <td>SSII</td>
+                <td>BBDD</td>
+            </tr>
+            <tr>
+                <td>10:05</td>
+                <td>PRGM</td>
+                <td>ED</td>
+                <td>ED</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Celdas combinadas horizontalmete</h3>
+    <p><strong>&lttd colspan="nº"&gt</strong>, en la etiqueta de la celda se usa para definir cuántas casillas va a
+        ocupara la celda hacia <em>ariba</em>
+    </p>
+    <table border="1px" width="250">
+        <caption>Horario</caption>
+        <thead>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td colspan="2">C</td>
+                <td>D</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td colspan="4">F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+                <td>J</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Celdas combinadas verticalmente</h3>
+    <p><strong>&lttd rowspan="nº"&gt</strong>, en la etiqueta de la celda se usa para definir cuántas casillas va a
+        ocupara la celda hacia <em>abajo</em>
+    </p>
+    <table border="1px" width="250">
+        <caption>Horario</caption>
+        <thead>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td rowspan="3">C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td rowspan="2">E</td>
+                <td>F</td>
+                <td rowspan="3">G</td>
+            </tr>
+            <tr>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>J</td>
+                <td>K</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Tabla dentro de tabla</h3>
+    <p>Se ha de hacer un rowspan en la casillaque va la tabla para que ocupe el resto de caseillas de la tabla madre</p>
+    <table border="1px" width="500px">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td rowspan="3">
+                <table border="1px" width="100%">
+                    <tr>
+                        <td colspan="3">A</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td colspan="2">D</td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">F</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>H</td>
+                        <td>I</td>
+                        <td>J</td>
+                    </tr>
+                    Javier Ramírez 35
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>l</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+    </table>
 
 
 
-<p> </p>
-<p> </p>
+    <p> </p>
+    <p> </p>
 </body>
+
 </html>
