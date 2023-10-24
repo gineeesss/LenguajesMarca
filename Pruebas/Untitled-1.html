@@ -142,7 +142,7 @@ windows.onload=function(){
         <br><a href="#"> <strong>&lthref="#"&gt</strong></a> es una practica abitual, recarga la pagina
         <br><a href="https://www.google.com" target="_blank"><strong>&lthref="direccion a enlazar"&gt</strong></a>para poner un enlace podemos usar la etiqueta junto a
         <br><strong>&lta href="..." target="_blank"&gt</strong> te abre en una pestaña nueva
-        <br><strong>&lta href="..." target="_self"&gt</strong> es el que viene default
+        <br><strong>&lta href="..." target="_self"&gt</strong> es el que viene default, se  quedda en la pestaña
         <br><strong>&lta href="index2.html"&gt</strong> podemos enlazar a un archivo local
         <br><strong>&lta href="#sitioId"&gt</strong> podemos enlazar a un apartado del html
         <br><strong>&lth1/p... id="sitioId"&gt</strong> tenemos que indiar allí donde queramos enlazar
@@ -318,7 +318,14 @@ windows.onload=function(){
     </table>
 
 
-
+<hr>
+<h2 id="Forms">Formularios</h2>
+<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+    <label for="fname">Nombre:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Apellidos:</label><br>
+    <input type="text" id="lname" name="lname">
+    </form>
     <p> </p>
     <p> </p>
 </body>
