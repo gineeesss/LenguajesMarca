@@ -325,9 +325,38 @@ windows.onload=function(){
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Apellidos:</label><br>
     <input type="text" id="lname" name="lname">
-    </form>
+</form>
     <p> </p>
-    <p> </p>
+
+<details open>
+    <summary>Contenido Oculto</summary>
+    <p>Este es el Contenido oculto.</p>
+</details>
+<p>Con el atributo open se muestra el contenido oculto </p>
+    <p> a</p>
+<audio controls autoplay loop>
+    <source src="audio inventado que no existe">
+    <source src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Median_test.ogg">
+</audio>
+    <p>Atributos etiqueta &lt;audio&gt;
+        <br>&lt;audio scrc="..."&gt; -> La fuente del audio
+        <br>&lt;audio controls&gt; -> Obligatorio y habilita los ajustes de reproduccion
+        <br>&lt;audio loop&gt; -> Al finalizar el audio se vuelve a inicar 
+        <br> muted
+        <br><source scr=""> -> Dentro de la etique audio, puede ver varias etiquetas de source con diferentes fuentes
+    </p>    
+    <p><hr></p>
+<video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" controls autoplay widht="300" poster="../images/hola.jpg">
+
+</video>    
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/JDs45GmZWUo" title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<P>
+    &lt;iframe&gt; -> carga la informacion de otro sitio
+</P>
+
 </body>
 
 </html>

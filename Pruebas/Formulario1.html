@@ -66,6 +66,29 @@
         <input type="submit" value="enviar">
         
     </form>
+    <p><hr></p>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <input type="hidden" name="token" id="token" value="140820j131dx10">
+    </form>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <textarea name="texto" rows="10" cols="50"></textarea>
+
+    </form>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <label>Eleccion:</label>
+        <select name="eleccion" multiple id="eleccion">
+            <option value="1">Valor 1</option>
+            <option value="1">Valor 1</option>
+            <option value="3" selected>Valor 3</option>
+        </select>
+        <input type="submit" value="enviar">
+
+    </form>
+
     <p>
         Con &lt;... required disabled ...&gt; <br>
         Cuando se usa step="", se deberá de enviar un valor que esté en el rango.
