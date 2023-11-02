@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html leng="es">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <title>P2.10 Forulario de Contacto</title>
@@ -8,14 +8,14 @@
     <h1>Formulario de contacto</h1>
     <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
         <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br>
+        <input type="text" id="nombre" name="nombre" required maxlength="30" placeholder="Escribe tu nombre"><br>
         <p></p>
         <label for="email">Email: </label>
-        <input type="email" id="email" name="email" placeholder="correo@empresa.com"><br>
+        <input type="email" id="email" name="email" required placeholder="correo@empresa.com"><br>
 
     <h4>Asunto:</h4>
 
-        <label for="presupuesto">Presupuesto: </label>
+        <label for="Presupuesto">Presupuesto: </label>
         <input type="radio" id="Presupuesto" name="Asunto" value="Presupuesto">
         <label for="Cita_Previa">Cita Previa:</label>
         <input type="radio" id="Cita_Previa" name="Asunto" value="Cita_Previa">
@@ -25,15 +25,22 @@
     <h4>¿Cómo nos has conocido?</h4>
         <input type="checkbox" id="amigo" name="conocido" value="amigo">
         <label for="amigo">Un amigo</label>
-        <input type="checkbox" id="google" name="conocido" value="googe">
-        <label for="googe">Gloogleando </label>
+        <input type="checkbox" id="google" name="conocido" value="google">
+        <label for="google">Gloogleando </label>
         <input type="checkbox" id="buzon" name="conocido" value="buzon">
         <label for="buzon">Buzoneo</label>
         <input type="checkbox" id="otros" name="conocido" value="otros">
         <label for="otros">Otros</label>
-    </form>
-
+    
+    <p>
+        Escribe tu mensaje<textarea name="texto" maxlength="300" rows="1"></textarea>
+    </p>
+        <input type="checkbox" id="aviso" name="aviso" value="aviso" required>
+        <label for="aviso">He leido y acepto el <a href="#">aviso legal y la politica de privacidad.</a></label>
+        <br>
+        <br>
+        <input type="submit" value="Enviar formulario.">
+        <p>Autor: <mark>@JavierRamírez</mark></p>
+</form>
 </body>
-
-
 </html>
