@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Repaso</title>
+</head>
+
+<body>
+        <table border="1" bgcolor="green">
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>Celda 3a</td>
+                            <td>Celda 3b</td>
+                            <td>Celda 3c</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>Celda 4a</td>
+                        </tr>
+                        <tr>
+                            <td>Celda 4b</td>
+                        </tr>
+                        <tr>
+                            <td>Celda 4c</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    <table border="1">
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>1a</td>
+                        <td>1b</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>2a</td>
+                        <td>2b</td>
+                    <tr>
+                        <td>2c</td>
+                        <td>2c</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>3a</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>4a1</td>
+                        <td>4a2</td>
+                        <td>4a3</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>3b1</td>
+                        <td>3b2</td>
+                    </tr>
+                    <tr>
+                        <td>3b3</td>
+                        <td>3b4</td>
+                    </tr>
+                </table>
+            </td>
+            <td>4b</td>
+        </tr>
+
+    </table>
+    <p>El proceso de <strong>maquetado</strong> de una página Web<sup>&#8482;</sup> consta de :</p>
+    <ol>
+        <li>Reunión con el cliente</li>
+        <li>Boceto HTML</li>
+        <li>Posicionado de elementos</li>
+        <li>Alojamiento y pago</li>
+    </ol>
+    <p>El pseudocódigo podría ser</p>
+    <pre><code>
+    while not fin:
+        revisaar
+        comprobar con el cliente
+    end while
+    </code></pre>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <fieldset>
+            <legend>Datos Fiscales</legend>
+            <input type="radio" id="paro" name="situacion" value="paro">
+            <label for="paro">En paro</label>
+            <br><input type="radio" id="autonomo" name="situacion" value="autonomo">
+            <label for="autonomo">Autónomo</label>
+            <br><input type="radio" id="cuenta_ajena" name="situacion" value="cuenta_ajena">
+            <label for="cuenta_ajena">Por c. Ajena</label>
+        </fieldset>
+        <fieldset border="1">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br><label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+            <br><label for="sueldo">Suelo:</label>
+            <select id="sueldo" name="sueldo">
+                <option name="sueldo" value="+400">Más de 400</option>
+                <option name="sueldo" value="-400">Menos de 400</option>
+                <option name="sueldo" value="variables">Variables</option>
+            </select>
+            <br><input type="checkbox" id="enfermedad" name="sitaucion_especial" value="enfermedad">
+            <label for="enfermedad">Con enfermedad profesional</label>
+            <br><input type="checkbox" id="padres" name="sitaucion_especial" value="padres">
+            <label for="padres">Con padres a cargo</label>
+            <br><input type="checkbox" id="hijos" name="sitaucion_especial" value="hijos">
+            <label for="hijos">Con hijos a cargo</label>
+            <input type="submit">
+        </fieldset>
+        </form>
+        <p>Crea un formulario como este:</p>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <fieldset>
+            <legend>Datos fiscales</legend>
+            <select name="sector" multiple>
+                <option value="automocion">Automocion</option>
+                <option value="metal">Metal</option>
+                <option value="informatica">Informática</option>
+                <option value="finanzas">Finanzas</option>
+            </select>
+            <br><input type="checkbox" name="trabajador" id="autonomo2" value="autonomo">
+            <label for="autonomo2">Autonomo</label>
+            <input type="checkbox" name="trabajador" id="cuenta" value="cuenta">
+            <label for="cuenta">Cuenta Ajena</label>
+            <input type="checkbox" name="trabajador" id="no_sabe" value="no_sabe">
+            <label for="no_sabe">No sabe</label>
+            <br><label for="funcion">Describa su función</label>
+            <br><textarea placeholder="Escriba aqui"></textarea>
+        </fieldset>    
+    </form>
+</body>
+
+</html>
