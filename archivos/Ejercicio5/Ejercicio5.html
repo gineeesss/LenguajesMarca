@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+    <label for="nombre">* Nombre y apellidos: </label>
+    <input type="text" required maxlength="60"  id="nombre" name="NombreApellidos" placeholder="Escrbe tu nombre y apellidos"><br><br>
+
+    <label for="email">* Email: </label>
+    <input type="email" required maxlength="30" id="email" name="email" placeholder="correo@empresa.com"><br><br>
+
+    <label for="fecha">Fecha de nacimiento:  </label>
+    <input type="date" id="fecha" name="fechaNacimiento">
+
+    <label for="pais">País</label>
+    <select name="pais" id="pais">
+        <option value="Portugal">Portugal</option>
+        <option value="España" selected>España</option>
+        <option value="Francia" >Francia</option>
+    </select>
+
+    <h3>Motivo</h3>
+
+        <input type="radio" id="Presupuesto" name="motivo" value="Presupuesto">
+        <label for="Presupuesto">Presupuesto.</label><br>
+
+        <input type="radio" id="citaPrevia" name="motivo" value="citaPrevia">
+        <label for="citaPrevia">Cita previa.</label><br>
+
+        <input type="radio" id="otros" name="motivo" value="otros">
+        <label for="otros">Otro.</label><br>
+
+        <h3>Suscribirse a:</h3>
+        <p><strong>Suscribirse a</strong></p>
+
+        <input type="checkbox" id="ofertas" name="suscripcion" value="ofertas">
+        <label for="ofertas">Ofertas de productos.</label><br>
+
+        <input type="checkbox" id="noticias" name="suscripcion" value="noticias">
+        <label for="noticias">Noticias.</label><br>
+
+        <input type="checkbox" id="congresos" name="suscripcion" value="congresos">
+        <label for="congresos">Congresos y exposiciones.</label><br>
+
+        <br><textarea maxlength="500" cols="100" rows="5" required></textarea>
+
+        <br> <br><input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">* He leído y acepto el aviso legal y la política de privacidad.</label>
+   <br><br> <input type="submit">
+    
+    
+    </form>
+</body>
+
+</html>
+
+ 

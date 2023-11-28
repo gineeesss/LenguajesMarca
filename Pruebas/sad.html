@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Forulario</title>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        
+        <label for="fnombre">Nombre:</label><br>
+        <input type="text" id="fnombre" name="fnombre" required><br>
+        
+        <label for="fnombre">Apellidos:</label><br>
+        <input type="text" id="fnombre" name="fnombre"><br>
+
+        <label for="city">Ciudad:</label><br>
+        <input type="text" id="city" name="city" value="Badajoz" required disabled><br>
+        
+        <label for="contra">Contraseña:</label><br>
+        <input type="password" id="contra" name="contra" required><br>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="lipiar">
+    
+    </form>
+    <hr>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <h3>Lenguaje</h3>
+
+        <input type="radio" id="html" name="leng_fav" value="html">
+        <label for=" html">HTML</label><br>
+
+        <input type="radio" id="css" name="leng_fav" value="css">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="js" name="leng_fav" value="js">
+        <label for="js">JavaScript</label><br>
+<p></p>
+<h3>Asignatura</h3>
+
+        <input type="radio" id="bbdd" name="mat_fav" value="bbdd">
+        <label for=" bdd">BBDD</label><br>
+
+        <input type="radio" id="prg" name="mat_fav" value="prg">
+        <label for="prg">Programación</label><br>
+
+        <input type="radio" id="lm" name="mat_fav" value="lm">
+        <label for="lm">Lenguajes de Marca</label><br>
+
+        <input type="submit" value="enviar">
+    </form>
+    <p><hr></p>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br>
+        
+        <label for="edadN">Edad no Negativa:</label>
+        <input type="number" id="edadN" name="edadN"  min="16" max="98" value="20" step="5"><br>
+
+        <label for="cumple">Edad Nacimiento:</label>
+        <input type="date" id="cumple" name="cumple" value="1921-02-01"><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" min="09:00" max="21:00" ><br>
+
+        <input type="submit" value="enviar">
+        
+    </form>
+    <p><hr></p>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <input type="hidden" name="token" id="token" value="140820j131dx10">
+    </form>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <textarea name="texto" rows="10" cols="50"></textarea>
+
+    </form>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <label>Eleccion:</label>
+        <select name="eleccion" multiple id="eleccion">
+            <option value="1">Valor 1</option>
+            <option value="1">Valor 1</option>
+            <option value="3" selected>Valor 3</option>
+        </select>
+        <input type="submit" value="enviar">
+
+    </form>
+
+    <p>
+        Con &lt;... required disabled ...&gt; <br>
+        Cuando se usa step="", se deberá de enviar un valor que esté en el rango.
+        
+    </p>
+
+    <!DOCTYPE html>  
+    <html LANG="es">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Actividad 1</title>
+    </head>
+    
+    <body>
+        <p>El contenido mínimo que tiene que tener un documento es: <p></p>
+            !DOCTYPE html  :   Tipo <br>
+            html LANG="es" :Indicas el Idioma del texto
+            head : Se abre la parte del encabezado <br>
+                meta charset = "utf-8" : Indicas el tipo de "alfabeto"<br>
+                title (se cierra): Para indicar el titulo de la página <br>
+            body: Donde se escribe "todo"</p>
+        <p>Hola esta es la Actividad 1</p>
+        <hr>
+        <p>Para poner espacios&nbsp;se usa esto & y nbsp ; </p>
+        <Algo>
+            <p ola>Sí, 25Gb mañana por la mañana </p ola>
+            <p a>Doces horas y media</p a>
+        </Algo>
+        <hr>
+    
+        <p><strong>Texto en Negrita con "strong", además, a nivel de seo la toma como importante</strong></p>
+        <p><b>Para poner negrita tambien se puede usar la etiqueta b pero no se va a usar porque es solo visual</b></p>
+        <p></p>
+        <em>Texto en Cursiva con "em"</em>
+        <hr>
+    
+        <p title="Boom">Atributo título con etiqueta "title", muestra un<br>
+        mensaje cuando pasas el cursor por encima</p>
+        <hr>
+    
+        <p>Con la etiqueta br al final de una linea se produce un salto de linea como aquí<br>
+        o tambien aquí <br>
+        o aquí<br></p>    
+        <hr>
+        <P>Soy un texto normal <br> <mark>Yo soy un texto marcado, etiqueta cerrada</mark></P>
+        <hr>
+        <p>Esta otra es una etiqueta de marcado que se define con <del>del, etiqueta cerrada</del></p>
+        <hr>
+    
+        <p>Tambien hay una etiqueta para <ins>subrrallar con ins</ins> </p>
+        <hr>
+            <SUP></SUP>
+        <p>Texto<sub>subIndic</sub></p>
+        <p>Texto<sup>superindice</sup></p>
+        <p>Texto<sub><sup>Ho</sup>la</sub></p>
+        <P>Texto<sup>ho</sup><sub>la</sub></P>
+        <hr>
+        <p>Texto normal<small>Texto pequeño<small>Texto más pequeño<small>Y aún más pequeño porque la etiqueta está dentro </small></small> </small></p>
+        <hr>
+        <p>Hola hola Hola con una <abbr title="pinpan">abrebiatura (abbr)</abbr> que tambien va bien para los seo</p>
+        <p>Tambien se puede usar con subrrallado<ins><abbr title="pum">Nose</abbr></ins></p>
+        <p>Una etiqueta title<dfn title="olé">Este es mejor para la definicion creo</dfn>Achúu</p>
+            <p></p>
+        <h1>Título con h1</h1>
+        <h2>Título con h2</h2>
+        <h3>Título con h3</h3>
+        <h4>Título con h3</h4>
+        <h5>Título con h5</h5>
+        <h6>Título con h6</h6>
+    
+        <h1>Actividades </h1>
+        <h2>Actividad 1</h2>
+            <h3>Actividad 1.1</h3>
+        <h2>Actividad 2</h2>
+            <h3>Actividad 2.1</h3>
+                <h4>Actividad 2.1.1</h4>
+                    <h5>Actividad 2.1.1.1</h5>
+                    <hr>
+    
+    
+        <p>Hola este es un parrafo</p>
+        <hr>
+        <p>Hola este es otro parrafo, y lo de arriba es una linea, con la etiqueta hr</p>            
+        <!DOCTYPE html>
+        <html lang="es">
+        
+        <head>
+            <meta charset="utf8">
+            <title>Stilos</title>
+        </head>
+        
+        <body>
+            <header>
+                <h1>Categorias</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>Categoria 1</li>
+                    <li>Categoria 2</li>
+                </ul>
+            </nav>
+            <section>
+                <article>
+                    <h2>Articulo 1</h2>
+                    <p>Descripcion articulo 1</p>
+        
+                </article>
+                <article>
+                    <h2>Articulo 2</h2>
+                    <p>Descripcion articulo 2</p>
+                </article>
+                <aside>
+                    <h3>Contenido adicional</h3>
+                </aside>
+            </section>
+            <footer>Pie de Página</footer>
+            <!DOCTYPE html>
+            <html lang="es">
+            
+            <head>
+                <meta charset="utf-8">
+                <title>Glosario</title>
+            </head>
+            
+            <body>
+                <h2>Indice</h2>
+                <ol>
+                    <li><a href="#estilo_texto">Estilo Texto y citas</a></li>
+                    <li><a href="#listas">Listas</a>
+                        <ol>
+                            <li><a href="#listaDesordenada">Listas Desordenadas</a></li>
+                            <li><a href="#listaOrdenada">Listas Ordenadas</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#definiciones">Defeniciones</a></li>
+                    <li><a href="#enlaces">Enlaces</a></li>
+                    <li><a href="#tablas">Tablas</a></li>
+            
+                </ol>
+                <hr>
+                <h2 id="estilo_texto">Estilos</h2>
+                <p> Es un ejemplo de codio JavaScript</p>
+                <code>
+                    windows.onload=function(){<br>
+                        alerta("Hola");<br>
+                    }
+                </code>
+                <p>La etiqueta pre preforatea el codigo para que se vea como en el codigo fuente</p>
+            
+                <code>
+                    <pre>
+            windows.onload=function(){
+                alerta("Hola");
+            }
+                    </pre>
+                </code>
+                </p>
+            
+                <p>La etiqueta samp simula el texto de las consolas</p>
+                <p><samp>Presiona F1 para continuar</samp></p>
+            
+                <p>para citar se usa la etiqueta blockquote cite='url'</p>
+                <blockquote cite="https://psicologiaymente.com/reflexiones/frases-bonitas-cortas"></blockquote>
+            
+                <p><q cite="https://psicologiaymente.com/reflexiones/frases-bonitas-cortas">
+                        Para citar se puede usar q, y con q cite"url"
+                    </q></p>
+            
+                <p>Hola soy un raton y un mando <cite>cita en cursiva</cite>.</p>
+            
+                <p>Para etiquetas direcciones se usa adress</p>
+                <adress>
+                    Centro<br>
+                    Avenida<br>
+                    Cod. Pos.<br>
+                    Ciudad <br>
+                    Pais
+                </adress>
+                <i>
+                    Centro<br>
+                    Avenida<br>
+                    Cod. Pos.<br>
+                    Ciudad <br>
+                    Pais
+                </i>
+                <hr>
+                <h2 id="listas">Listas</h2>
+                <h3 id="listaDesordenada">Listas Desordenadas</h3>
+                <p>Para escribir unaetiqueta no ordenada se usa la etiqueta ul, y todo lo que vaya dentro tiene que ir con una
+                    etiqueta li</p>
+                <ul type="square">
+                    <li>Agua</li>
+                    <li>Cuadrado</li>
+                    <li></li>
+                    <li>Escribiendo type="square" en la etiqueta ul</li>
+                </ul>
+                <ul type="circle">
+                    <li>Circulo</li>
+                    <li>Escribiendo type="circle" en la etiqueta ul</li>
+                </ul>
+                <h3 id="listaOrdenada">Lista Ordenada</h3>
+                <p>Lista ordendada</p>
+                <ol>
+                    <li>Primera fila</li>
+                    <li>Segunda fila</li>
+                </ol>
+                <ol type="i" start="7" reversed>
+                    <li>Con type = "A" entonces enumera con letras mayusculas</li>
+                    <li>Con type = "a" entonces enumera con letras minusculas</li>
+                    <li>Con type = "i" entonces enuera con numeros romanos</li>
+                    <li>Con start "7" empieza desde la posición 7</li>
+                    <li>Con reversed empieza desde el final</li>
+                </ol>
+                <p>Anidar lista usando etiqueta de lita "ul" dentro de las etiquetas li</p>
+                <ul>
+                    <li>Bebidas
+                        <ul>
+                            <li>Agua
+                                <ol>
+                                    <li>Sin gas</li>
+                                    <li>Con gas</li>
+                                </ol>
+                            </li>
+                            <li>Café</li>
+                            <li>Zumo
+                                <ol>
+                                    <li>Taronga</li>
+                                    <li>Pomelo</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Otros
+                        <ul>
+                            <li>Huevos</li>
+                            <li>Tambien se puede poner parrafos en la lista</li>
+                            <li>Pan
+                                El pan, del latín panis, es un alimento básico que forma parte de la dieta tradicional
+                                en Europa, Medio Oriente, India, América y Oceanía. <p>Se suele preparar mediante el horneado
+                                    de una masa, elaborada fundamentalmente con harina de cereal, agua y sal
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p id="definiciones">Paar hacer una lista de eficiniciones se usa la etiqueta dl, y dt y dd para el termiino y su
+                    definicion respectivamente</p>
+                <dl>
+                    <dt>Coche:</dt>
+                    <dd>Vehículo de cuatro ruedas.</dd>
+            
+                    <dt>Moto:</dt>
+                    <dd>Vehiculo de dos ruedas.</dd>
+                </dl>
+                <hr>
+                <h2 id="enlaces">Enlaces</h2>
+                <p>Etiqueta enlace -> a href=""
+                    <br><a href="#"> <strong>&lthref="#"&gt</strong></a> es una practica abitual, recarga la pagina
+                    <br><a href="https://www.google.com" target="_blank"><strong>&lthref="direccion a enlazar"&gt</strong></a>para poner un enlace podemos usar la etiqueta junto a
+                    <br><strong>&lta href="..." target="_blank"&gt</strong> te abre en una pestaña nueva
+                    <br><strong>&lta href="..." target="_self"&gt</strong> es el que viene default, se  quedda en la pestaña
+                    <br><strong>&lta href="index2.html"&gt</strong> podemos enlazar a un archivo local
+                    <br><strong>&lta href="#sitioId"&gt</strong> podemos enlazar a un apartado del html
+                    <br><strong>&lth1/p... id="sitioId"&gt</strong> tenemos que indiar allí donde queramos enlazar
+                    <br><a href="/index.html"><strong>&lta href="/index.html"&gt</strong></a> podemos abrir otro documento en cualquier direccion
+                    <br><a href="/../Pruebas/index.html"><strong>&ltahref="../../Pruebas/index.html"&gt</strong></a>podemos tanto retroceder como avanzar enlos repositorios
+                    <br><img src="../images/hola.jpg" alt="hola" height="100" width="100">
+                    <br><strong>&ltimg src="../images/hola.jpg&gt</strong>
+                    <br>alt="hola" -> etiqueta obligatoria para cuando hay un problema con la presentacion de la imagen, vemos el
+                    texto
+                    <br>height="155" -> ajusta la altura
+                    <br>width="150" -> ajusta el ancho de la imagen, si se cambia solo el ancho, la altura se ajusta (con width:
+                    numero% se ajusta al porcentaje de la pantalla que se indique)
+                </p>
+            
+                <h2 id="tabas">Tablas</h2>
+                <p>Para definir tabla se usa la etiqueta <strong>&lttabla&gt</strong>, dentro de ella están las filas
+                    <strong>&lttr&gt</strong> y luego las celdas <strong>&lttd&gt</strong>
+                    <br><strong>&lttborder="nºpx"&gt</strong> atributo dentro de la etiqueta tabla, se definen bordes
+                    <br><strong>&ltth&gt</strong> en lugar de td define el caracter del la celda como encabezado
+                    <br><strong>&ltCaption&gt</strong> se usa para el titulo de la tabla <strong>&lt/caption&gt</strong>
+                    <br>Al igual que en un codigo html se puede dividir la tabla <strong>&ltthead&gt</strong> en head y body usando
+                    <strong>&lttbody&gt</strong>
+                    <br><strong>&lttable width="nº"&gt</strong> para definir el ancho de la celda, se puede usar tambien en % para
+                    que se extienda el porcentaje de la página deseado
+                </p>
+                <table border="1px">
+                    <caption>ejemplo</caption>
+                    <tr>
+                        <td>Celda 1</td>
+                        <td>Celda 2</td>
+                    </tr>
+                </table>
+                <p></p>
+                <table border="1px">
+                    <caption>Horario</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:15</td>
+                            <td>BBDD</td>
+                            <td>SSII</td>
+                            <td>BBDD</td>
+                        </tr>
+                        <tr>
+                            <td>10:05</td>
+                            <td>PRGM</td>
+                            <td>ED</td>
+                            <td>ED</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <h3>Celdas combinadas horizontalmete</h3>
+                <p><strong>&lttd colspan="nº"&gt</strong>, en la etiqueta de la celda se usa para definir cuántas casillas va a
+                    ocupara la celda hacia <em>ariba</em>
+                </p>
+                <table border="1px" width="250">
+                    <caption>Horario</caption>
+                    <thead>
+            
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">A</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">C</td>
+                            <td>D</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">F</td>
+                        </tr>
+                        <tr>
+                            <td>G</td>
+                            <td>H</td>
+                            <td>I</td>
+                            <td>J</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <h3>Celdas combinadas verticalmente</h3>
+                <p><strong>&lttd rowspan="nº"&gt</strong>, en la etiqueta de la celda se usa para definir cuántas casillas va a
+                    ocupara la celda hacia <em>abajo</em>
+                </p>
+                <table border="1px" width="250">
+                    <caption>Horario</caption>
+                    <thead>
+            
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                            <td rowspan="3">C</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">E</td>
+                            <td>F</td>
+                            <td rowspan="3">G</td>
+                        </tr>
+                        <tr>
+                            <td>H</td>
+                        </tr>
+                        <tr>
+                            <td>I</td>
+                            <td>J</td>
+                            <td>K</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <h3>Tabla dentro de tabla</h3>
+                <p>Se ha de hacer un rowspan en la casillaque va la tabla para que ocupe el resto de caseillas de la tabla madre</p>
+                <table border="1px" width="500px">
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td rowspan="3">C</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">E</td>
+                        <td>F</td>
+                        <td rowspan="3">
+                            <table border="1px" width="100%">
+                                <tr>
+                                    <td colspan="3">A</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td colspan="2">D</td>
+                                    <td>E</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">F</td>
+                                </tr>
+                                <tr>
+                                    <td>G</td>
+                                    <td>H</td>
+                                    <td>I</td>
+                                    <td>J</td>
+                                </tr>
+                                Javier Ramírez 35
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>l</td>
+                        <td>J</td>
+                        <td>K</td>
+                    </tr>
+                </table>
+            
+            
+            <hr>
+            <h2 id="Forms">Formularios</h2>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <label for="fname">Nombre:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Apellidos:</label><br>
+                <input type="text" id="lname" name="lname">
+            </form>
+                <p> </p>
+            
+            <details open>
+                <summary>Contenido Oculto</summary>
+                <p>Este es el Contenido oculto.</p>
+            </details>
+            <p>Con el atributo open se muestra el contenido oculto </p>
+                <p> a</p>
+            <audio controls autoplay loop>
+                <source src="audio inventado que no existe">
+                <source src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Median_test.ogg">
+            </audio>
+                <p>Atributos etiqueta &lt;audio&gt;
+                    <br>&lt;audio scrc="..."&gt; -> La fuente del audio
+                    <br>&lt;audio controls&gt; -> Obligatorio y habilita los ajustes de reproduccion
+                    <br>&lt;audio loop&gt; -> Al finalizar el audio se vuelve a inicar 
+                    <br> muted
+                    <br><source scr=""> -> Dentro de la etique audio, puede ver varias etiquetas de source con diferentes fuentes
+                </p>    
+                <p><hr></p>
+            <video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" controls autoplay widht="10" poster="../images/hola.jpg">
+            
+            </video>    
+            <iframe width="100" height="100"
+            src="https://www.youtube.com/embed/JDs45GmZWUo" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <P>
+                &lt;iframe&gt; -> carga la informacion de otro sitio
+            </P>
+            
+            
+            <br>
+            <div>&lt;div&gt;Esto es un elemento en bloque -> Ocupa todo el bloque que ocupa el elemento</div>
+            <span>&lt;span&gt;Estp es un elemento en linea -> Ocupa solo el espacio necesario por el contenido</span>
+            
+            </body>
+            
+            </html>
