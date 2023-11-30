@@ -1,0 +1,30 @@
+/*{          aplica para todo
+    color: red;
+} */
+
+p{          /*aplica solo para p*/
+    color: red;
+}
+
+div{
+    color: red;
+}
+
+p, div, h1{
+    color: red;
+}
+
+h1{         /*comparte la caracteristica color pero tambien se define con fuente grande*/
+    font-size: large;
+}
+div p {     /*selecciona todos los parrafos que están dentro de un div*/
+    color: rgb(255, 0, 153);
+}
+
+d{
+    color: aqua; font-size: xx-large;
+}
+
+p  span{   
+    color: rgb(144, 144, 50);
+}
