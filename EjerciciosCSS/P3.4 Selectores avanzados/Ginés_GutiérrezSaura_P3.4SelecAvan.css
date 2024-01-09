@@ -1,0 +1,92 @@
+/*Ejercicio 1: Seleccionar todos los elementos <li> que son nietos de
+un elemento con la clase "menu".*/
+.menu > ul > li {
+    color:#f2a;
+}
+/*Ejercicio 2: Seleccionar todos los elementos <a> que son hijos
+directos de un elemento con ID "encabezado".*/
+#encabezado > a{
+    color:#902;
+}
+/*Ejercicio 3: Seleccionar todos los elementos <span> que son hijos
+directos de un elemento con la clase "destacado" y están dentro
+de un contenedor con ID "contenido".*/
+div#contenido .destacado > span{
+    color:#00D;
+}
+/*Ejercicio 4: Seleccionar todos los elementos con la clase "boton"
+que son descendientes de un elemento con la clase "formulario".*/
+.formulario .boton{
+    color: #f02a9f;
+}
+/*Ejercicio 5: Seleccionar todos los párrafos (<p>) que son hijos
+directos de un elemento con la clase "contenedor" y están
+precedidos por un elemento con la clase "titulo".*/
+.titulo + .contenedor > p{
+    color: #f311ff;
+}
+/*Ejercicio 6: Seleccionar todos los elementos <div> que son hijos
+directos de un elemento con ID "cuerpo" y tienen la clase "bloque".*/
+#cuerpo > div[class="bloque"]{ /*div.bloque*/
+    color: #ff052f;
+}
+/*Ejercicio 7: Seleccionar todos los elementos con la clase "enlace"
+que son hijos directos de un elemento con la clase "menu" y están
+precedidos por un elemento con la clase "icono".*/
+.icono + .menu > .enlace{
+    color: #f7094f;
+}
+/*Ejercicio 8: Seleccionar todos los elementos con la clase
+"subtitulo" que son hijos directos de un elemento con la clase
+"seccion" y están dentro de un contenedor con la clase "pagina".*/
+div.pagina .seccion >.subtitulo{
+    color:#f9a0f0;
+}
+/*Ejercicio 9: Seleccionar todos los elementos con la clase
+"resumen" que son hijos directos de un elemento con la clase
+"articulo" y tienen la clase "destacado".*/
+.articulo >.resumen.destacado{
+    color:#faf000;
+}
+/*Ejercicio 10: Seleccionar todos los elementos <button> con el
+atributo aria-label que contenga la palabra "cerrar".*/
+button[aria-label*="cerrar"]{
+    color: #ff5172;
+}
+/*Ejercicio 11: Seleccionar todos los elementos con el atributo data-
+category que sea igual a "tecnología".*/
+*[data-category="tecnología"]{
+    color: #ff91b2;
+}
+/*Ejercicio 12: Seleccionar todos los elementos con el atributo data-
+theme que termine con "-dark".*/
+*[data-theme|="-dark"]{
+    color: #df99ac;
+}
+/*Ejercicio 13: Seleccionar todos los elementos con el atributo role
+que contenga la palabra "navigation"*/
+*[role*="navigation"]{
+    color:#f5ff10;
+}
+/*Ejercicio 14: Seleccionar todos los elementos <a> con el atributo
+href que contenga "https://".*/
+a[href*="https://"] a{
+    color:#aaaaaa;
+}
+/*Ejercicio 15: Seleccionar todos los elementos con el atributo
+tabindex que sea exactamente igual a "0".*/
+
+/*Ejercicio 16: Seleccionar todos los elementos con el atributo data-
+type que comience con "video".*/
+
+/*Ejercicio 17: Seleccionar todos los elementos <img> con el
+atributo alt vacío.*/
+
+/*Ejercicio 18: Seleccionar todos los elementos con el atributo data-
+price que sea mayor o igual a "50".*/
+
+/*Ejercicio 19: Seleccionar todos los elementos <input> con el
+atributo type que sea igual a "email" o "tel".*/
+
+/*Ejercicio 20: Seleccionar todos los elementos con el atributo data-
+status que esté presente, independientemente de su valor.*/

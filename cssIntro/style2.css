@@ -1,0 +1,40 @@
+/*
+elemento1 + elemento2{
+    color: red;
+}
+*/
+p+p {
+    color: red;
+}
+
+a[class="externo"] {
+    /*selecciona todos los elementos a con el atributo*/
+    color: #009121;
+}
+
+a[data-test="externo"] {
+    color: #000099;
+}
+
+a[data-test~="externo"] {
+    /*~ que al menos uno de los valores del atributo*/
+    color: #006699;
+}
+
+a[data-test|="externo"] {
+    /*| selecciona los elementos  que comienzan por el valor*/
+    color: #f55099;
+}
+
+p[data-test*="test"] {
+    color: #228855;
+}
+
+p[data-test^="test"] {
+    color: #f20015;
+}
+
+h1 {color:#278ff0;font-size:2em;font-family:Verdana;} /*hay que procurar minimizaar el espacio*/
+body{font-family:Arial;}
+h2{font-family:Verdana;}
+
