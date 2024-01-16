@@ -1,0 +1,17 @@
+body{font-size: .8em;}
+.p1{font-size: 1em;}
+.p2{font-size: 1.2em;}
+.p3{font-size: .8em;}
+h1{font-size: 2.5em;}
+/*si se mezclan unidades*/
+body{
+    font-size: 12px;
+    text-indent: 3em;
+}
+h1{
+    font-size: 15px;
+}
+#lateral{
+    width: 200px;
+    border: 1px;
+}
