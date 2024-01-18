@@ -18,29 +18,16 @@ img { border: none; }
 }
 
 #cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
-  padding: 0.5em;
   border: 2px solid #777;
 }
 
-#pie{
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-#cabecera { 
-  clear: both;
-  padding: 1em;
-}
-#menu {
-  clear: both; 
-  padding: 0.5em;
-  margin-bottom: 0.5em;  
-}
+#cabecera { clear: both; }
+#menu { clear: both; }
 #lateral { float: left; width: 20%; }
 #contenido { float: right; width: 78%; }
 #contenido #principal { float: left; width: 78%; }
 #contenido #secundario { float: right; width: 20%; }
-#pie { margin-top: 1em; clear: both; }
+#pie { clear: both; }
 
 /*-- Cabecera --------------------------------------------------------*/
 #cabecera #logo { float: left; }
@@ -60,14 +47,63 @@ img { border: none; }
    A partir de aquí, se pueden añadir todos los estilos propios que 
    sean necesarios.
    ================================================================== */
-  
-.articulo {
-  margin: 1em;
+
+   /*Regla para que quepa el contedido secundario en la misma linea que os otros*/
+
+#contenido #principal{
+  width: 73%;
 }
 
- #publicidad{
+
+/*1. El elemento #cabecera debe tener un relleno de 1em en todos los lados.*/
+
+#cabecera{
+  padding: 1em;
+}
+
+/*2. El elemento #menu debe tener un relleno de 0.5em en todos los lados y un
+margen inferior de 0.5em.*/
+
+#menu{
+  padding: .5em;
+  margin-bottom: .5em;
+}
+
+/*3. El resto de elementos (#noticias, #publicidad, #principal, #secundario) deben
+tener 0.5em de relleno en todos sus lados, salvo el elemento #pie, que sólo
+debe tener relleno en la zona superior e inferior.*/
+
+#noticias,#publicidad,#principal,#secundario{
+  padding: .5em;
+}
+#pie{
+  padding-top: .5;
+  padding-bottom: .5;
+}
+
+/*4. Los elementos .articulo deben mostrar una separación entre ellos de 1em*/
+
+.articulo{
+  margin-bottom: 1em;
+}
+
+/*5. Las imágenes de los artículos muestran un margen de 0.5em en todos sus
+lados.*/
+
+.articulo img{
+  margin: .5em 0 .5em;
+}
+
+/*6. El elemento #publicidad está separado 1em de su elemento superior.*/
+
+#publicidad{
   margin-top: 1em;
- } 
- .articulo img{
-  margin: 0.5em;
- }
+}
+
+/*7. El elemento #pie debe tener un margen superior de 1em.*/
+
+#pie{
+  margin-top: 1em;
+}
+
+
