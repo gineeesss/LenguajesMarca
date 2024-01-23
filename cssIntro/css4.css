@@ -1,0 +1,64 @@
+body{
+    background-color: violet;
+    background-image: url("../images/css3.png");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+div{
+    width:100%;
+    height:auto;
+    background-image: url("../images/css3.png");
+    background-repeat: repeat-x;
+}
+#caja1{
+    background-image: url("./300px-charmander.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    background-position: top right;
+    border: 1px solid purple;
+}
+
+#caja2{
+    background-image: url("./300px-charmander.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    background-position: bottom right;
+    border: 1px solid purple;
+}
+
+p{
+    position: static;
+}
+
+img{
+    border:1px solid green;
+}
+
+img#img3 {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+img#img {
+    position: absolute;
+    left: 300px;
+}
+
+/*La posición se desplaza on respecto al contenedor en el que se encuentra*/
+/**/
+div{
+    border: 1px solid brown;
+}
+div img{
+    position: absolute;
+    top: 30px;
+    left: 23px;
+}   
+img{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
