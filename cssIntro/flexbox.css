@@ -1,0 +1,100 @@
+.contenedor {
+    border: 1px solid black;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    /*reparte el contenio por igual, es dinámico*/
+    height: 150px;
+    align-items: center;
+}
+
+.caja {
+    border: 1px solid black;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+.subcontenedor {
+    display: flex;
+    align-items: flex-start;
+    background-color: brown;
+}
+
+.container {
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    flex-wrap: wrap;
+    /*hace que los elementos hijos ocupen el ancho posible, apilandose s no caben bien*/
+}
+
+.cajon {
+    border: 1px solid black;
+    background-color: bisque;
+    height: 100px;
+    width: 150px;
+}
+
+.cont {
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    flex-direction: column;
+    /*el valor por defecto es row*/
+}
+
+.caj {
+    border: 1px solid black;
+    background-color: bisque;
+    height: 100px;
+    width: 150px;
+
+}
+
+.conti {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 229, 176);
+    flex-wrap: wrap;
+    align-items: center;
+    height: 500px;
+}
+
+.grid-item {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+.primero{
+    order: 1;
+    align-self:flex-start ;
+}
+.ultimo{
+    order: -1;
+}
+
+.uno{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    border: 1px solid black;
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+}
+.item-2{
+    margin-left: auto;
+}
