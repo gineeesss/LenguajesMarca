@@ -1,0 +1,78 @@
+.pagina{
+    border: 1px solid red;
+}
+.menu-container{
+    background-color: aquamarine;
+    display: flex;
+    padding: 10px;
+    height: 20px;
+    justify-content: space-between;
+}
+.menu{
+    width: auto;
+    display: flex;
+    align-items: center;
+
+}
+.menu-item{
+    border: 1px solid red;
+    margin-right: 1opx;
+}
+.login{
+    border: 1px solid rebeccapurple;
+    top: auto;
+    align-self: flex-start;
+}
+.logo{
+    background-color: antiquewhite;
+    border: 1px solid red;
+    text-align: center;
+}
+.caja{
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajon{
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+}
+.cajon-1{
+    display: flex;
+}
+.cajon-2{
+
+}
+.cajon-imagenes{
+    padding: 20px;
+    align-items: center;
+    min-width: 800px;
+    display: flex;
+}
+.imagen{
+    margin: 5px;
+    display: flex;
+    align-self: center;
+    border: 1px solid white;
+    height: 100px;
+    width: 200px;
+}
+.cuerpo-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cuerpo{
+    display: flex;
+    border: 1px solid red;
+}
+.articulo{
+
+}
+.publicidad{
+
+}

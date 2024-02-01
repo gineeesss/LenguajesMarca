@@ -48,3 +48,26 @@ margin-left: 20px;
     height: 300px;
     border: 1px solid black;
 }
+
+/*si el contenido ocupa todo el ancho, solo se necesita un contenido padre flex*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+    /*los div se quedan con el ancho necesario del contenido*/
+
+.footer-item{
+    border: 1px solid white;
+    background-color: cadetblue;
+    height: 200px;
+    flex: 1;
+}
+.flooter-dos{
+    flex: 2; /*para que la caja del medio sea el doble de ancha que el resto*/
+}
+.flooter-un, .flooter-tres{
+    min-width: 300px;
+    flex: initial;
+    height: 200px;
+}
