@@ -1,18 +1,20 @@
 .pagina{
     border: 1px solid red;
 }
+body{
+    min-width: 800px;
+}
 .menu-container{
     background-color: aquamarine;
     display: flex;
-    padding: 10px;
-    height: 20px;
+    height: 50px;
     justify-content: space-between;
+    border: 1px solid red;
 }
 .menu{
     width: auto;
     display: flex;
-    align-items: center;
-
+    align-items:center;
 }
 .menu-item{
     border: 1px solid red;
@@ -45,22 +47,27 @@
     display: flex;
 }
 .cajon-2{
-
+    border: 1px solid red;
 }
 .cajon-imagenes{
-    padding: 20px;
+    padding: 20px 0 20px 0;
     align-items: center;
     min-width: 800px;
     display: flex;
 }
 .imagen{
     margin: 5px;
+    justify-content: center;
     display: flex;
     align-self: center;
     border: 1px solid white;
     height: 100px;
     width: 200px;
 }
+
+
+
+
 .cuerpo-contenedor{
     display: flex;
     align-items: center;
@@ -68,11 +75,48 @@
 }
 .cuerpo{
     display: flex;
+    width: 800px;
     border: 1px solid red;
 }
 .articulo{
-
+    align-items: center;
+    flex: 1;
 }
 .publicidad{
+    align-items: center;
+    border: 1px solid red;
+    width: 200px;
+}
 
+
+
+
+
+.footer{
+    display: flex;
+    border: 1px solid red;
+}
+.pie1, .pie2, .pie3{
+    border: 1px solid red;
+    margin: 10px;
+}
+.pie2{
+    flex: 2;
+}
+.pie1, .pie3{
+    flex: 1;
+}
+
+
+
+.login{
+    align-items: center;
+}
+.contrasena, .correo{
+    align-self:flex-end;
+    padding: 10px;
+    border: 1px red solid;
+}
+.fondologin{
+    background-image:url("./imágenes/banner.jpg");
 }
