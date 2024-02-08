@@ -1,0 +1,67 @@
+a{ margin: 1em;
+    text-decoration: none;
+    float: left;
+    clear: left;
+}
+
+
+a:hover{
+    color: green;
+}
+.importante:hover{ color: yellow;
+    
+    border : thick solid;
+}
+.raro{
+
+}
+
+.raro:hover:visited{
+    color: grey;    
+}
+a.importante{
+    border: thick solid;
+    background: url(./300px-Charmander.png)  no-repeat left center;
+    padding-left: 22px;
+
+}
+a.pdf{
+    background: url(../images/css3.png)  no-repeat left center ;
+    padding-left: 22px;
+    color: green;
+
+}
+
+
+
+a { margin: 1em 0; float: left; clear: left; }
+.rss {
+color: #E37529;
+padding: 0 0 0 18px;
+background: #FFF url(../images/css3.png) no-repeat left center;
+}
+.pdf {
+padding: 0 0 0 22px;
+background: #FFF url(./300px-Charmander.png) no-repeat left center;
+}
+
+
+
+
+
+
+
+a { margin: 1em 0; float: left; clear: left; }
+a.boton {
+text-decoration: none;
+background: #EEE;
+color: #222;
+border: 1px outset #CCC;
+padding: .1em .5em;
+}
+a.boton:hover {
+background: #CCB;
+}
+a.boton:active {
+border: 1px inset #000;
+}

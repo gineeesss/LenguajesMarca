@@ -1,61 +1,77 @@
-.pagina{
+.pagina {
     border: 1px solid red;
 }
-body{
+
+body {
     min-width: 800px;
 }
-.menu-container{
+
+.menu-container {
     background-color: aquamarine;
     display: flex;
     height: 50px;
     justify-content: space-between;
     border: 1px solid red;
 }
-.menu{
+
+.menu {
     width: auto;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
-.menu-item{
+
+.menu-item {
     border: 1px solid red;
     margin-right: 1opx;
 }
-.login{
+
+.login {
     border: 1px solid rebeccapurple;
     top: auto;
     align-self: flex-start;
 }
-.logo{
+
+.logo {
     background-color: antiquewhite;
     border: 1px solid red;
     text-align: center;
 }
-.caja{
+
+.caja {
     background-color: yellowgreen;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
-.cajon{
+.cajon {
     display: flex;
     border: 1px solid red;
     align-items: center;
     justify-content: center;
+    background-image: url(/img/banner.jpg); 
+    background-repeat: no-repeat;
+    background-size:cover;
 }
-.cajon-1{
+
+
+.cajon-1 {
     display: flex;
 }
-.cajon-2{
+
+.cajon-2 {
     border: 1px solid red;
 }
-.cajon-imagenes{
+
+.cajon-imagenes {
     padding: 20px 0 20px 0;
     align-items: center;
     min-width: 800px;
     display: flex;
 }
-.imagen{
+
+.imagen {
     margin: 5px;
     justify-content: center;
     display: flex;
@@ -66,23 +82,24 @@ body{
 }
 
 
-
-
-.cuerpo-contenedor{
+.cuerpo-contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.cuerpo{
+
+.cuerpo {
     display: flex;
     width: 800px;
     border: 1px solid red;
 }
-.articulo{
+
+.articulo {
     align-items: center;
     flex: 1;
 }
-.publicidad{
+
+.publicidad {
     align-items: center;
     border: 1px solid red;
     width: 200px;
@@ -92,31 +109,106 @@ body{
 
 
 
-.footer{
+.footer {
     display: flex;
     border: 1px solid red;
 }
-.pie1, .pie2, .pie3{
+
+.pie1,
+.pie2,
+.pie3 {
     border: 1px solid red;
     margin: 10px;
 }
-.pie2{
+
+.pie2 {
     flex: 2;
 }
-.pie1, .pie3{
+
+.pie1,
+.pie3 {
     flex: 1;
 }
 
 
 
-.login{
+.login {
     align-items: center;
 }
-.contrasena, .correo{
-    align-self:flex-end;
+
+.contrasena,
+.correo {
+    align-self: flex-end;
     padding: 10px;
     border: 1px red solid;
 }
-.fondologin{
-    background-image:url("./imágenes/banner.jpg");
+
+.fondologin {
+    background-image: url("./imágenes/banner.jpg");
+    background-size: cover;
+}
+
+
+
+
+
+
+a.login {
+    text-decoration: none;
+    background: #EEE;
+    color: #222;
+    border: 1px outset #CCC;
+    padding: .1em .5em;
+}
+
+a.login:hover{
+    background: #CCB;
+}
+
+a.login:active {
+    border: 1px inset #000;
+}
+
+.menu-item a{
+    text-decoration: none;
+    background: #EEE;
+    color: #222;
+    border: 1px outset #CCC;
+    padding: .1em .5em;
+}
+
+.menu-item a:active{
+    border: 1px inset #ff8686;
+}
+.menu-item a:hover{
+    background: #CCB;
+}
+
+
+
+
+.tablaTipos{
+    display: flex;
+    flex-direction: column;
+}
+.tipoPokemon{
+    display: flex;
+    margin: 3px 0 3px 0;
+    border: 1px solid red;
+    padding: 10px;
+}
+.tipoPokemon img{
+}
+a{
+    text-decoration: none;
+}
+a.tipoEnlaces{
+    color: green;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+a.tipoEnlaces:hover{
+    color: rebeccapurple;
+    background-color: yellow;
+
 }
