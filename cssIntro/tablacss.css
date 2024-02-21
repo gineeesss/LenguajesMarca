@@ -1,0 +1,50 @@
+table, tr, td, th{
+    border: 1px solid brown;
+    border-collapse: collapse; /*collapse o separated*/
+    min-width: 300px;
+}
+table{
+    width: 100%;
+}
+th{
+height: 100%;
+}
+td:nth-child(odd){background-color: grey;}
+tr:hover{background-color: orange ;}
+
+
+input[type="text"]{
+    background-color: blue;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-image: url("./300px-Charmander.png");
+    background-repeat: no-repeat;
+}
+input[type="password"]{
+    background-color: red;
+    border: 2px solid yellow;
+}
+input[type="email"]{
+    background-color:green;
+}
+input:focus{
+    border: 2px solid gainsboro;
+}
+#id{
+    background-color: red;
+}
+.clase{
+    background-color: rebeccapurple; 
+}
+p{
+    background-color: pink !important; /*hace que tenga prioridad al resto de estilos*/
+}
+p:first-line{color: red;}
+P:first-letter{color: black;font-size: 25px}
+img{
+    overflow-clip-margin:inherit;
+    overflow: clip;
+}
+h1{text-align: center;}
+h2{text-align: left;}
+h3{text-align: right;}

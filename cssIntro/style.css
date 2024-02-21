@@ -25,6 +25,7 @@ d{
     color: aqua; font-size: xx-large;
 }
 
-p  span{   
+p  span{   /*No necesita ser directamente span dentro de p, aunque esté dentro de 
+    un a y alguna otra etiqueta, como sigue estando dentro de p, se aplica el estilo*/
     color: rgb(144, 144, 50);
 }
