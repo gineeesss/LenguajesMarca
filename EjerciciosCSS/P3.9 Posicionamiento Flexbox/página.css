@@ -212,3 +212,34 @@ a.tipoEnlaces:hover{
     background-color: yellow;
 
 }
+
+body{
+    background-color: #FFF0F0;
+}
+.tipos-contenedor{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tipofuego{
+    background-image: url("./imágenes/pokemon-fuego.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.tipofuego p{
+    position: relative;
+    z-index: 6;
+    mix-blend-mode: difference; 
+    color: white;
+
+}
+/*para que se pueda ver el fondo y el texto, ponerle fondo opaco al texto*/
+.tipos-titulos{
+    text-align: center; 
+    margin-bottom: 20px
+}
+.tipos{
+    width: 80%;
+}
