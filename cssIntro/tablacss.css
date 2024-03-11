@@ -28,7 +28,7 @@ input[type="email"]{
     background-color:green;
 }
 input:focus{
-    border: 2px solid gainsboro;
+    border: 2px solid red;
 }
 #id{
     background-color: red;
@@ -48,3 +48,8 @@ img{
 h1{text-align: center;}
 h2{text-align: left;}
 h3{text-align: right;}
+.miau{
+    position: absolute;
+    right:  1px;
+    bottom: 1px;
+}
