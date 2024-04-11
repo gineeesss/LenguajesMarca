@@ -1,0 +1,48 @@
+/* a) Seleccionar todos los elementos de la página */
+*{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* b) Seleccionar todos los elementos <em> con la clase "especial" */
+em.especial{
+    color: #FFFF00;
+    background: #000000;
+}
+
+/* c) Seleccionar todos los párrafos de la página */
+p{
+    color: #666;
+}
+
+/* d) Seleccionar todos los elementos con id "noticia-principal" o con id "noticia-secundaria" */
+#noticia-principal, #noticia-secundaria{
+    background: pink;
+    border: 1px solid black;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+/* e) Seleccionar todos los elementos <div> con la clase "bloque" que son hijos directos de un elemento con ID "cuerpo" */
+#cuerpo > div.bloque{
+    background: #FF0000;
+    color: #FFFFFF;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+/* f) Seleccionar todos los elementos con la clase "enlace" que están precedidos por un elemento con la clase "icono" que son hijos o nietos de un elemento con la clase "menu" */
+.enlace + .icono {
+    background: #0000FF;
+}
+
+/* g) Seleccionar todos los elementos con el atributo data-type que comience con "video" */
+*[data-type|=video] {
+    color: #FF0000;
+}
+
+/* h) Seleccionar todos los elementos con el atributo role que contenga la palabra "navigation" */
+*[role~=navigation]{
+    background: #00FF00;
+}

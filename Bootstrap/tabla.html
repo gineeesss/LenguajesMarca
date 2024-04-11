@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mi primera página de Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .conteneor {
+            background-image: url("../images/hola.jpg");
+            background-size: cover;
+            background-repeat: repeat-y;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteneor">
+
+        <div class="container">
+            <p class="h5">h5 Encabezado de Bootstrap</p>
+            <p class="h6">h6 Encabezado de Bootstrap</p>
+        </div>
+        <p>Utilice el elemento de mark (o la clase .mark) para
+            <mark>resaltar</mark> un texto.
+        </p>
+        <h1>Blockquotes</h1>
+        <p>El elemento blockquote se usa para presentar contenido de otra
+            fuente:</p>
+        <blockquote class="blockquote">
+            <p>For 50 years, WWF has been protecting the future of nature. The
+                world's leading conservation organization, WWF works in 100 countries and is
+                supported by 1.2 million members in the United States and close to 5 million
+                globally.</p>
+            <footer class="blockquote-footer">From WWF's website</footer>
+        </blockquote>
+        <h1>Code Snippets</h1>
+        <p>Inline snippets of code should be embedded in the code element:</p>
+        <p>The following HTML elements: <code>span</code>, <code>section</code>,
+            and <code>div</code> defines a section in a document.</p>
+
+        <h1>Keyboard Inputs</h1>
+        <p>To indicate input that is typically entered via the keyboard, use the
+            kbd element:</p>
+        <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+        h1>Multiple Code Lines</h1>
+        <p>For multiple lines of code, use the pre element:</p>
+        <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both spaces and
+        line breaks.
+        </pre>
+        <h2>Colores contextuales</h2>
+        <p>Use las clases contextuales para proporcionar "significado a través de
+            colores":</p>
+        <p class="text-muted">This text is muted.</p>
+        <p class="text-primary">This text is important.</p>
+        <p class="text-success">This text indicates success.</p>
+        <p class="text-info">This text represents some information.</p>
+        <p class="text-warning">This text represents a warning.</p>
+        <p class="text-danger">This text represents danger.</p>
+        <p class="text-secondary">Secondary text.</p>
+        <p class="text-dark">This text is dark grey.</p>
+        <p class="text-body">Default body color (often black).</p>
+        <p class="text-light">This text is light grey (on white background).</p>
+        <p class="text-white">This text is white (on white background).</p>
+        <h2>Opacity Text Colors</h2>
+        <p>Add 50% opacity for black or white text with the .text-black-50 or
+            .text-white-50 classes:</p>
+        <p class="text-black-50">Black text with 50% opacity on white
+            background</p>
+        <p class="text-white-50 bg-dark">White text with 50% opacity on black
+            background</p>
+        <h2>Contextual Backgrounds</h2>
+        <p>Use the contextual background classes to provide "meaning through
+            colors".</p>
+        <div class="bg-primary p-3"></div>
+        <div class="bg-success p-3"></div>
+        <div class="bg-info p-3"></div>
+        <div class="bg-warning p-3"></div>
+        <div class="bg-danger p-3"></div>
+        <div class="bg-secondary p-3"></div>
+        <div class="bg-dark p-3"></div>
+        <div class="bg-light p-3"></div>
+        <h2>Background Color with Contrasting Text Color</h2>
+        <p class="text-bg-primary">This text is important.</p>
+        <p class="text-bg-success">This text indicates success.</p>
+        <p class="text-bg-info">This text represents some information.</p>
+        <p class="text-bg-warning">This text represents a warning.</p>
+        <p class="text-bg-danger">This text represents danger.</p>
+        <p class="text-bg-secondary">Secondary background color.</p>
+        <p class="text-bg-dark">Dark grey background color.</p>
+        <p class="text-bg-light">Light grey background color.</p>
+        <h2>Tabla básica</h2>
+        <p>La clase .table agrega un estilo básico (relleno ligero y divisores
+            horizontales) a una tabla:</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Filas a rayas</h2>
+        <p>La clase .table-striped agrega rayas de cebra a una
+            tabla:</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                Javier Ramírez 30
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Tabla Bordeada</h2>
+        <p>La clase .table-bordered agrega bordes en todos los lados de la tabla y
+            las celdas:</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="../images/hola.jpg" class="img-fluid" alt="hola" width="200px" />
+        <img src="../images/html5.png" />
+        <div class="bg-primary text-white border p-5 rounded mt-4">
+            <h2>Miauu miauuu miauu</h2>
+            <p>Hola holita vecinitoHola holita vecinitoHola holita vecinitoHola holita vecinitoHola holita vecinitoHola
+                holita vecinitoHola holita vecinito</p>
+        </div>
+        <div class="container">
+            <div class="alert alert-danger">
+                <strong>ALERTA! Nigiris fuera!</strong>
+            </div>
+        </div>
+        <div class="container m-3">
+            <button type="button" class="btn btn-info">Info</button>
+        </div>
+        <div class="container m-3">
+            <button type="button" class="btn btn-primary active">Activo </button>
+            <button type="button" class="btn btn-primary disabled">Desactivo </button>
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm">Loading</span>
+                Loading
+            </button>
+        </div>
+        <div class="btn-group btn-group-sm">
+            <button class="btn btn-primary">Loading</button>
+            <button class="btn btn-secondary">Editar</button>
+            <button class="btn btn-danger">Borrar</button>
+        </div>
+        <p></p>
+        <div class="btn-group btn-group-vertical btn-group-sm">
+            <button class="btn btn-primary">Loading</button>
+            <button class="btn btn-secondary">Editar</button>
+            <button class="btn btn-danger">Borrar</button>
+        </div>
+        <div class="container m-3">
+            <span class="badge bg-success">CUIDAO!</span>
+            <span class="badge bg-success">CUIDAO!</span>
+        </div>
+        <div class="container m-3">
+            <button class="btn btn-success">MIAU <span class="badge bg-primary">3</span></button>
+        </div>
+        <div class="container m-3">
+            <div class="progress">
+                <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width:40%">33%
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <ul class="pagination pagination s-m">
+                <li class="page-item"><a class="page-link" href="#">
+                        << /a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">></a></li>
+            </ul>
+        </div>
+        <div class="container mt-3">
+            <ul class="list-group">
+                <li class="list-group-item">Yaea</li>
+                <li class="list-group-item">Adios</li>
+                <li class="list-group-item">Hola</li>
+            </ul>
+        </div>
+        <div class="container mt-3">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between rounded-pill">Lista Entrada<span
+                        class="badge bg-secondary">5</span></li>
+                <li class="list-group-item d-flex justify-content-between rounded-pill">Anuncio<span
+                        class="badge bg-primary">12</span></li>
+                <li class="list-group-item d-flex justify-content-between rounded-pill">Papelera<span
+                        class="badge bg-success">12</span></li>
+            </ul>
+        </div>
+        <div class="container t-3">
+            <div class="card" style="width: 400px;">
+                <img class="card-img-top" src="./trotuman.jpg">
+                <h4 class="card-tittle">HOLA</h4>
+                <span class="btn">Miau</span>
+                </img>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item" href="#">Croack</li>
+                <li class="dropdown-item" href="#">Auuu</li>
+                <li class="dropdown-item" href="#">Miau</li>
+                <hr class="dropdown-divider">
+                <li class="dropdown-item" href="#">Sniff</li>
+            </ul>
+        </div>
+        <div class="container mt-3">
+            <a href="#demo" class="btn btn-primary" data-bs-toggle="collapse">Collapsible</a>
+            <div id="demo" class="collapse">
+                <p>MIUUU</p>
+            </div>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/css3.png" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./trotuman.jpg" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./trotuman.jpg" alt="New York" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <p> 
+            <div class="row">
+                <div class="col-sm-4 border">columna 1</div>
+                <div class="col-sm-4 border">columna 2</div>
+            </div>
+        </p>
+        <p> s </p>
+        <p> s</p>
+        <p> s </p>
+        <p> s</p>
+        <p> s</p>
+        <p> s</p>
+        </conteneor>
+
+</body>
+
+</html>

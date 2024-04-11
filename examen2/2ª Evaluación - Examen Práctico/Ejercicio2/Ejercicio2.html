@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .container {
+      position: relative;
+
+    }
+
+    .black-box {
+      border: 2px solid black;
+      height: 100px;
+      margin: 30px;
+      position: relative;
+      z-index: -3;
+    }
+    .gray-box {
+      background: lightgray;
+      position: absolute;
+      height: 60px;
+      width: 70%;
+      left: 50px;
+      z-index: -1;
+      top: 50px;
+    }
+
+    .green-box {
+      background: lightgreen;
+      position: absolute;
+      width: 35%;
+      left: 270px;
+      top: -15px;
+      height: 100px;
+      z-index: -2;
+    }
+    .red-box {
+      background: rgb(228, 161, 161);
+      height: 60px;
+      width: 50%;
+      left: 100px;
+      top: -50px;
+      z-index: 1;
+      position: relative;
+    }
+  </style>
+</head>
+
+<!-- No se puede modificar el HTML -->
+
+<body>
+  <h1>Ejercicio 2</h1>
+
+  <div class="container">
+    <div class="black-box">Caja negra</div>
+    <div class="red-box">Caja roja</div>
+    <div class="gray-box">Caja gris</div>
+    <div class="green-box">Caja verde</div>
+  </div>
+
+</body>
+
+</html>

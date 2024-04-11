@@ -1,0 +1,15 @@
+/* ESTE CONTENIDO NO PUEDE SER MODIFICADO */
+.container {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  margin: 10px;
+}
+
+/* FIN DEL CONTENIDO QUE NO PUEDE SER MODIFICADO */
+
+/* APARTIR DE AQUI PUEDES AÑADIR TUS ESTILOS */
