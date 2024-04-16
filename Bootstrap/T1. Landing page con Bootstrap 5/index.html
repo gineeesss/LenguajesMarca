@@ -77,7 +77,7 @@
                     <p class="h4 card-tittle">Doctor Strange</p>
                     <p>La vida del famoso neurocirujano Dr. Stephen Strange cambia para siempre cuando un
                         terrible accidente de coche le arrebata el uso de sus manos.</p>
-                    <a href="#" class="btn btn-primary btn-sm" style="width: 100px;">Ver Perfil</a>
+                    <button type="button" class="btn btn-primary btn-sm" style="width: 100px;" data-bs-toggle="modal" data-bs-target="#doctorModal">Ver Perfil</a>
                 </div>
             </div>
             <div class="col col-md-4">
@@ -87,7 +87,7 @@
                     <p>Peter Parker asume su nueva identidad como Spiderman y regresa a vivir con su tía
                         después de su aventura con los Vengadores.
                     </p>
-                    <a href="#" class="btn btn-primary btn-sm" style="width: 100px;">Ver Perfil</a>
+                    <button type="button" class="btn btn-primary btn-sm" style="width: 100px;" data-bs-toggle="modal" data-bs-target="#spidermanModal">Ver Perfil</a>
                 </div>
             </div>
             <div class="col col-md-4">
@@ -96,7 +96,7 @@
                     <p class="h4 card-tittle">Hulk <span class="badge bg-success">Up</span></p>
                     <p>Hulk es un personaje ficticio, un superhéroe que aparece en los cómics estadounidenses publicados
                         por la editorial Marvel Comics.</p>
-                    <a href="#" class="btn btn-primary btn-sm" style="width: 100px;">Ver Perfil</a>
+                    <button type="button" class="btn btn-primary btn-sm" style="width: 100px;" data-bs-toggle="modal" data-bs-target="#spidermanModal">Ver Perfil</a>
                 </div>
             </div>
         </div>
@@ -112,7 +112,6 @@
                 </p>
             </div>
         </div>
-        <!-- Nav tabs -->
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#doctorcol">Doctor Strange</a>
@@ -180,15 +179,54 @@
                 inforación</p>
         </div>
     </div>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
+    <div class="modal fade" id="doctorModal" tabindex="-1" aria-labelledby="doctorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="doctorModalLabel">Doctor Strange</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>La vida del famoso neurocirujano Dr.Stephen Strange cambia para siempre cuando un terrible accidente de coche le arrebata el uso de sus manos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="spidermanModal" tabindex="-1" aria-labelledby="spidermanModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="spidermanModalLabel">Hulk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Peter Parker asume su nueva identidad como Spiderman y regrasa a vivir con su tía después de su aventura con los Vengadores.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="spidermanModal" tabindex="-1" aria-labelledby="spidermanModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <P class="h3 modal-title" id="spidermanModalLabel">Hulk</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Hulk es un personaje ficticio, un superhéroe que aparece en los cómics estadounidenses publicados por la editorial Marvel Comics.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
