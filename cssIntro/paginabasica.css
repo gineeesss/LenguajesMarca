@@ -1,49 +1,58 @@
-.menu-container{
+.menu-container {
     color: white;
     background-color: #7f4fff;
     display: flex;
     justify-content: center;
     padding: 20px 0;
 }
-.menu{
+
+.menu {
     width: 900px;
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
 }
 
-.links{
+.links {
     display: flex;
     border: 1px solid black;
 }
 
-.login{
-margin-left: 20px;
-}   
-.header-container{
+.login {
+    margin-left: 20px;
+}
+
+.header-container {
     background-color: aquamarine;
     display: flex;
     justify-content: center;
 }
-.header{
+
+.header {
     display: flex;
     width: 900px;
     height: 300px;
     justify-content: space-between;
     align-items: center;
 }
-.photo-grid-container{
+
+.photo-grid-container {
     display: flex;
     justify-content: center;
 }
-.photo-grid{
+
+.photo-grid {
     width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
 }
-.photo-grid-item{
+
+.photo-grid-item {
+    padding: 25px;
+    margin: 5px;
+    background-color: rebeccapurple;
     width: 300px;
     height: 300px;
     border: 1px solid black;
@@ -51,23 +60,185 @@ margin-left: 20px;
 
 /*si el contenido ocupa todo el ancho, solo se necesita un contenido padre flex*/
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
 }
-    /*los div se quedan con el ancho necesario del contenido*/
 
-.footer-item{
+/*los div se quedan con el ancho necesario del contenido*/
+
+.footer-item {
     border: 1px solid white;
     background-color: cadetblue;
     height: 200px;
+    width: 200px;
     flex: 1;
 }
-.flooter-dos{
-    flex: 2; /*para que la caja del medio sea el doble de ancha que el resto*/
+
+a.un {
+    border-bottom: thick solid
 }
-.flooter-un, .flooter-tres{
-    min-width: 300px;
+
+.dos {}
+
+p a.tres {
+    text-decoration: overline;
+    border-bottom: thin dashed;
+}
+
+.flooter-dos {
+    flex: 2;
+    /*para que la caja del medio sea el doble de ancha que el resto*/
+}
+
+.flooter-un,
+.flooter-tres {
     flex: initial;
-    height: 200px;
 }
+
+a {
+    margin: 1em 0;
+    float: left;
+    clear: left;
+}
+
+.rss {
+    color: #E37529;
+    padding: 0 0 0 18px;
+    background: #FFF url(imagenes/rss.gif) no-repeat left center;
+}
+
+.pdf {
+    padding: 0 0 0 22px;
+    background: #FFF url(300px-Charmander.png) no-repeat left center;
+}
+
+a:hover {
+    background-color: rebeccapurple;
+}
+
+a:active {
+    border: 1px inset red;
+}
+
+.pdf {
+    background: yellow;
+    border: 1px outset;
+    padding: .1em .5em;
+}
+
+img {
+    width: 100px;
+}
+
+ul li {
+    background: #F4F4F4;
+    border: 1px solid #7C7C7C;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+input[type="text"] {
+    background-color: blue;
+    color: white;
+}
+
+input[type="password"] {
+    background-color: yellow;
+    color: black;
+}
+
+input[type="email"]:focus {
+    color: white;
+}
+
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('300px-Charmander.png');
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+h2::before {
+    content: url(300px-Charmander.png);
+}
+.photo-grid-item{
+    background-image: url(300px-Charmander.png);
+    background-repeat: no-repeat;
+    background-position: -88% 77%;
+    background-size: 200px;
+}
+body{
+    background-image: url(300px-Charmander.png);
+    background-size: 900px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.cccontainer{
+    display: flex;
+    justify-content: center;
+    background-color: rebeccapurple;
+    width: 700px;
+}
+
+.ccontainer{
+    display: flex;
+    align-items: center;
+
+}
+.menucontainer{
+
+}
+.nmenu{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+.nitem{
+    width: 60px;
+    background-color: yellow;
+    padding: 2em;
+}
+.cuerpo{
+    display: flex;
+}
+.articulos{
+    display: flex;
+    align-items: flex-start;
+}
+.articulos-item{
+    width: 200px;
+    height: 100px;
+    background-color: rebeccapurple;
+}
+.publicidad{
+    display: flex;
+}
+.publi{}

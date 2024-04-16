@@ -1,4 +1,86 @@
 body {
+<<<<<<< HEAD
+    display: flex;
+    background-image: url("../images/fondo.gif");
+    background-repeat: repeat-x; /* Para repetir horizontalmente */
+    background-color: #F2F5FE; /* Color de fondo #F2F5FE */
+    z-index: -2;
+    font-family: Verdana, sans-serif; /* Tipo de letra Verdana */
+    color: #192666; /* Color de letra #192666 */
+}
+#contenedor{
+    background-color: white;
+    margin: auto;
+    align-self: center;
+    width: 770px;
+    justify-self: center;
+}
+#cabecera{
+    background-image: url("../images/cabecera.jpg");
+    height: 100px;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    border: 1px red solid;
+    display: flex;
+}
+
+#buscador{
+    margin: 10px;
+    margin-left: auto;
+    justify-self: right;
+    background-color: red;
+}
+#menu{
+    background-color: #192666;
+    display: flex;
+}
+#menu ul{
+    display: flex;
+}
+#menu a{
+    text-decoration: none;
+    margin: 1px;
+    color: #B5C4E3;
+    background-color: #253575;
+    padding: .7em;
+    border: 1px;
+}
+#menu a:hover{
+    background-color: #31479B;
+    color: orange;
+}
+
+#contenido{
+    display: flex;
+}
+#principal{
+    width: 530px;
+}
+#articulo{
+    background-image: url("../images/fondo_articulo.jpg");
+}
+#secundario{
+    width: 200px;
+}
+#sobremi{
+
+}
+#categorias{
+
+}
+#seleccionado{
+
+}
+#enlace{
+
+}
+#pie{
+    background-image: url("../images/fondo_pie.jpg");
+    background-repeat: no-repeat;
+}
+=======
     margin: 0;
     padding: 0;
     background: #F2F5FE url("../images/fondo.gif") repeat-x;
@@ -229,3 +311,4 @@ ul, ol {
     top: 10px;
     left: 40px;
   }
+>>>>>>> 1ec78564dfaf454221a52d736f96df1a043b8ca8
