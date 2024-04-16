@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+    <autoinicio>true</autoinicio>
+    <filesPath>C://app/files</filesPath>
+    <usersPath>C://app/users</usersPath>
+    <users>
+        <user id="1 ">
+            <username>Javier</username>
+            <fullScreen>false</fullScreen>
+            <screenMode>Black</screenMode>
+        </user>
+        <user id="2">
+            <username>Elena</username>
+            <fullScreen>true</fullScreen>
+            <screenMode>Black</screenMode>
+        </user>
+    </users>
+</conf>
