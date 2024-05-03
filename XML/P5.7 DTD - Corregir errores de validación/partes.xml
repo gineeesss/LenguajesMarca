@@ -1,12 +1,14 @@
+</mesa>
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE partes [
    <!ELEMENT partes (secciones)>
    <!ELEMENT secciones ANY>
    <!ELEMENT letras (#PCDATA)>
 ]>
-
-<secciones>
-   <letras>abc</letras>
-   MNT
-   <letras>xyz</letras>
-</secciones>
+<partes>
+   <secciones>
+      <letras>abc</letras>
+      MNT
+      <letras>xyz</letras>
+   </secciones>
+</partes> 

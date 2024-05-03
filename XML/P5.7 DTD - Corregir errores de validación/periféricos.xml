@@ -3,8 +3,6 @@
    <!ELEMENT perifericos (#PCDATA)>
 ]>
 
-<perifericos>
-   <periferico>impresora</periferico>
-   <periferico>monitor</periferico>
-   <periferico>teclado</periferico>
-</perifericos>
+<perifericos>impresora</periferico>
+<perifericos>monitor</periferico>
+<perifericos>teclado</periferico>
