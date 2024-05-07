@@ -11,4 +11,5 @@
       MNT
       <letras>xyz</letras>
    </secciones>
-</partes> 
+</partes>
+<!--Falta el elemento secciones dentro de partes-->

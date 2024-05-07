@@ -4,7 +4,7 @@
     <filesPath>C://app/files</filesPath>
     <usersPath>C://app/users</usersPath>
     <users>
-        <user id="1 ">
+        <user id="1">
             <username>Javier</username>
             <fullScreen>false</fullScreen>
             <screenMode>Black</screenMode>
