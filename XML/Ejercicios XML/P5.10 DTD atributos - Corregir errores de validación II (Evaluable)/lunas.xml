@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE lunas [
+   <!ELEMENT lunas (luna)*>
    <!ELEMENT luna EMPTY>
       <!ATTLIST luna numero ID #REQUIRED>
-      <!ATTLIST luna nombre ID #REQUIRED>
+      <!ATTLIST luna nombre ID #CDATA>
       <!ATTLIST luna planeta #IMPLIED>
 ]>
-
+<!-- En la linea 6, es un id required, ya hay un id, entonces se pone #CDATA en vez de REQUIRED-->
+<!-- En la linea 7 se pone #IMPLIED-->
 <lunas>
    <luna numero="N234" nombre="Galatea"/>
    <luna numero="N479" nombre="Mimas" planeta="Saturno"/>

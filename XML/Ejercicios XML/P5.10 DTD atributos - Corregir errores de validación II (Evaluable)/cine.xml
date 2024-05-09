@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE cine [
+   <!ELEMENT cine (peliculas, actores)>
    <!ELEMENT peliculas (pelicula)*>
       <!ELEMENT pelicula (#PCDATA)>
-         <!ATTLIST pelicula codpel ID (P1 | P2 | P3 | P4) "P0">
+         <!ATTLIST pelicula codpel ID #IMPLIED>
    <!ELEMENT actores (actor)*>
       <!ELEMENT actor (#PCDATA)>
-         <!ATTLIST actor filmografia IDREF #REQUIRED>
+         <!ATTLIST actor filmografia IDREFS #REQUIRED>
 ]>
-
+<!-- Linea 5, falta poner P5
+     Linea 8, falta pooner 'S' en IDREF
+-->
 <cine>
    <peliculas>
       <pelicula>Avatar</pelicula>
