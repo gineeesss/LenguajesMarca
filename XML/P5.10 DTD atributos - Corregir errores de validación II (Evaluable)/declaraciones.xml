@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE declaraciones [
-   <!ELEMENT declaraciones (consonante | tipo_de_dato | variable)>
+   <!ELEMENT declaraciones (#PCDATA | consonante | tipo_de_dato | variable)*>
    <!ELEMENT consonante (#PCDATA)>
-      <!ATTLIST consonante valor CDATA #REQUIRED>
+   <!ATTLIST consonante valor CDATA #IMPLIED>
    <!ELEMENT tipo_de_dato (#PCDATA)>
    <!ELEMENT variable (#PCDATA)>
-      <!ATTLIST variable tipo CDATA #REQUIRED>
+   <!ATTLIST variable tipo CDATA #IMPLIED>
 ]>
 
 <declaraciones>

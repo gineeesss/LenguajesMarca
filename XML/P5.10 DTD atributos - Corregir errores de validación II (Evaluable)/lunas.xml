@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE lunas [
-   <!ELEMENT luna EMPTY>
+      <!ELEMENT lunas (luna*)>
+      <!ELEMENT luna EMPTY>
       <!ATTLIST luna numero ID #REQUIRED>
-      <!ATTLIST luna nombre ID #REQUIRED>
-      <!ATTLIST luna planeta #IMPLIED>
+      <!ATTLIST luna nombre CDATA #REQUIRED>
+      <!ATTLIST luna planeta CDATA #IMPLIED>
 ]>
 
 <lunas>

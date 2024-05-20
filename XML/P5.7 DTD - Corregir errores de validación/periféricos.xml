@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE perifericos [
-   <!ELEMENT perifericos (#PCDATA)>
+   <!ELEMENT periferico (#PCDATA)>
 ]>
-
-<perifericos>impresora</periferico>
-<perifericos>monitor</periferico>
-<perifericos>teclado</periferico>
+<perifericos>
+   <periferico>impresora</periferico>
+   <periferico>monitor</periferico>
+   <periferico>teclado</periferico>
+</perifericos>
