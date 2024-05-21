@@ -2,7 +2,11 @@
 <!DOCTYPE saludos [
    <!ELEMENT saludos (saludo*)>
    <!ELEMENT saludo (#PCDATA)>
+<<<<<<< HEAD:XML/P5.10 DTD atributos - Corregir errores de validación II (Evaluable)/saludos.xml
       <!ATTLIST saludo idioma (ALE | FRA | ITA | POR) "POR">
+=======
+      <!ATTLIST saludo idioma (ALE | FRA | ITA | ESP | POR) "ESP">
+>>>>>>> 0a45fc874045e0b518001d79687a860ff9cecde9:XML/Ejercicios XML/P5.10 DTD atributos - Corregir errores de validación II (Evaluable)/saludos.xml
 ]>
 
 <saludos>

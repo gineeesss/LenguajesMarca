@@ -6,7 +6,7 @@
 ]>
 
 <articulos>
-   <articulo nombre="bolígrafo" color="rojo"/>
-   <articulo nombre="cuaderno"/>
-   <articulo nombre="rotulador" color="amarillo"/>
+   <articulo  color="rojo">boligrafo</articulo>
+   <articulo>cuaderno</articulo>  
+   <articulo color="rojo">rotulador</articulo>
 </articulos>
