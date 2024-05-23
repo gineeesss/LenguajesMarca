@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< org.example:CalculadoraDePila >--------------------
+[INFO] Building CalculadoraDePila 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.3.1:checkstyle (default-cli) @ CalculadoraDePila ---
+[INFO] Rendering content with org.apache.maven.skins:maven-default-skin:jar:1.3 skin.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.397 s
+[INFO] Finished at: 2024-05-23T18:51:43+02:00
+[INFO] ------------------------------------------------------------------------

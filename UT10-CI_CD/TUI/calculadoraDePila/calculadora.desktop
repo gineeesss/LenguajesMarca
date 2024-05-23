@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Calculadora de Pila
+Comment=Una Calculadora de Pila (RPN) implementada en Java con desarrollo continuo
+Exec=java -jar "./out/artifacts/CalculadoraDePila_jar/CalculadoraDePila.jar"
+Terminal=false
+Type=Application
