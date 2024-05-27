@@ -1,34 +1,10 @@
-#gameBoard {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-}
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
 
-.cell {
-    width: 60px;
-    height: 60px;
-    background-color: #e3e3e3;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cell button {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background-color: transparent;
-}
-
-.cell.green {
-    background-color: #28a745;
-}
-
-.cell.red {
-    background-color: #dc3545;
-}
-
-.navbar {
-    margin-bottom: 20px;
+    /* Circle */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
 }
