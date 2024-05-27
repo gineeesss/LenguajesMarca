@@ -23,24 +23,20 @@ function startGame() {
     // Iniciar juego
     setGame();
 }
+let scoreRed = 0;
+let scoreYellow = 0;
 
-function setWinner(r, c) {
-    let winnerModal = new bootstrap.Modal(document.getElementById('winnerModal'), {
-        keyboard: false
-    });
-
-    if (board[r][c] == playerRed) {
-        document.getElementById("winnerMessage").innerText = "¡Fichas Rojas han ganado!";
-        redCounter++;
-        document.getElementById("redCounter").innerText = redCounter;
-    } else {
-        document.getElementById("winnerMessage").innerText = "¡Fichas Amarillas han ganado!";
-        yellowCounter++;
-        document.getElementById("yellowCounter").innerText = yellowCounter;
+function updateScore(player) {
+    if (player == playerRed) {
+        scoreRed += 1;
+        document.getElementById('scoreRed').textContent = scoreRed;
+    } else if (player == playerYellow) {
+        scoreYellow += 1;
+        document.getElementById('scoreYellow').textContent = scoreYellow;
     }
-
-    winnerModal.show();
 }
+
+
 function setGame() {
     board = [];
     currColumns = [5, 5, 5, 5, 5, 5, 5];
@@ -181,4 +177,29 @@ function setWinner(r, c) {
         winner.innerText = "Yellow Wins";
     }
     gameOver = true;
+}
+
+
+
+function setWinnerMal(r, c) {
+    let winnerModal = new bootstrap.Modal(document.getElementById('winnerModal'), {
+        keyboard: false
+    });
+
+    if (board[r][c] == playerRed) {
+        document.getElementById("winnerMessage").innerText = "¡Fichas Rojas han ganado!";
+        redCounter++;
+        document.getElementById("redCounter").innerText = redCounter;
+        updateScore(playerRed);
+        
+    } else {
+        document.getElementById("winnerMessage").innerText = "¡Fichas Amarillas han ganado!";
+        yellowCounter++;
+        document.getElementById("yellowCounter").innerText = yellowCounter;
+        updateScore(playerYellow);
+        
+    }
+    updateScore(winner);
+
+    winnerModal.show();
 }
