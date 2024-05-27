@@ -5,6 +5,8 @@
 
     /* Circle */
     background-color: white;
-    border-radius: 50%;
     border: 5px solid navy;
 }
+.rotate-180 {
+    transform : rotate(180deg);
+  }

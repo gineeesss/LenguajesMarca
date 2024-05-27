@@ -13,6 +13,34 @@ window.onload = function() {
     setGame();
 }
 
+function startGame() {
+    // Reiniciar contadores
+    redCounter = 0;
+    yellowCounter = 0;
+    document.getElementById("redCounter").innerText = redCounter;
+    document.getElementById("yellowCounter").innerText = yellowCounter;
+
+    // Iniciar juego
+    setGame();
+}
+
+function setWinner(r, c) {
+    let winnerModal = new bootstrap.Modal(document.getElementById('winnerModal'), {
+        keyboard: false
+    });
+
+    if (board[r][c] == playerRed) {
+        document.getElementById("winnerMessage").innerText = "¡Fichas Rojas han ganado!";
+        redCounter++;
+        document.getElementById("redCounter").innerText = redCounter;
+    } else {
+        document.getElementById("winnerMessage").innerText = "¡Fichas Amarillas han ganado!";
+        yellowCounter++;
+        document.getElementById("yellowCounter").innerText = yellowCounter;
+    }
+
+    winnerModal.show();
+}
 function setGame() {
     board = [];
     currColumns = [5, 5, 5, 5, 5, 5, 5];
@@ -32,6 +60,34 @@ function setGame() {
         board.push(row);
     }
 }
+
+function dropPiece(column) {
+    if (gameOver) {
+        return;
+    }
+
+    let r = currColumns[column]; 
+
+    if (r < 0) {
+        return;
+    }
+
+    board[r][column] = currPlayer;
+    let tile = document.getElementById(r.toString() + "-" + column.toString());
+    if (currPlayer == playerRed) {
+        tile.style.backgroundColor = "red";
+        currPlayer = playerYellow;
+    } else {
+        tile.style.backgroundColor = "yellow";
+        currPlayer = playerRed;
+    }
+
+    r -= 1;
+    currColumns[column] = r;
+
+    checkWinner();
+}
+
 
 function setPiece() {
     if (gameOver) {
