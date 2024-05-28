@@ -144,7 +144,7 @@ function checkWinner() {
         }
     }
 
-    // anti diagonal
+    // diagonal reves
     for (let r = 0; r < rows - 3; r++) {
         for (let c = 0; c < columns - 3; c++) {
             if (board[r][c] != ' ') {
@@ -177,29 +177,4 @@ function setWinner(r, c) {
         winner.innerText = "Yellow Wins";
     }
     gameOver = true;
-}
-
-
-
-function setWinnerMal(r, c) {
-    let winnerModal = new bootstrap.Modal(document.getElementById('winnerModal'), {
-        keyboard: false
-    });
-
-    if (board[r][c] == playerRed) {
-        document.getElementById("winnerMessage").innerText = "¡Fichas Rojas han ganado!";
-        redCounter++;
-        document.getElementById("redCounter").innerText = redCounter;
-        updateScore(playerRed);
-        
-    } else {
-        document.getElementById("winnerMessage").innerText = "¡Fichas Amarillas han ganado!";
-        yellowCounter++;
-        document.getElementById("yellowCounter").innerText = yellowCounter;
-        updateScore(playerYellow);
-        
-    }
-    updateScore(winner);
-
-    winnerModal.show();
 }
