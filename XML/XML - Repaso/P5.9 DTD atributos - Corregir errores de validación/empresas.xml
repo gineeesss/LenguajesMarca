@@ -7,7 +7,7 @@
 ]>
 
 <empresas>
-   <empresa fecha_de_fundacion="1976">Apple</empresa>
-   <empresa>Google</empresa>
-   <empresa fecha_de_fundacion="1975">Microsoft</empresa>
+   <empresa nombre="Apple" fecha_de_fundacion="1976"></empresa>
+   <empresa nombre="Google"></empresa>
+   <empresa nombre="Microsoft" fecha_de_fundacion="1975"></empresa>
 </empresas>

@@ -4,9 +4,10 @@
    <!ELEMENT secciones ANY>
    <!ELEMENT letras (#PCDATA)>
 ]>
-
-<secciones>
-   <letras>abc</letras>
+<partes>
+   <secciones>
+      <letras>abc</letras>
    MNT
-   <letras>xyz</letras>
-</secciones>
+      <letras>xyz</letras>
+   </secciones>
+</partes>

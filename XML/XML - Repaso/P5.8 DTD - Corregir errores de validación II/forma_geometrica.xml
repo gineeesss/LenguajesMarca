@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE forma_geometrica [
-   <!ELEMENT forma_geometrica (nombre | caracteristicas | numero_de_lados)>
+   <!ELEMENT forma_geometrica (nombre,caracteristicas,numero_de_lados)>
    <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT caracteristicas (color,tipo)>
    <!ELEMENT color (#PCDATA)>
    <!ELEMENT tipo (#PCDATA)>
    <!ELEMENT numero_de_lados (#PCDATA)>

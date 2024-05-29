@@ -4,7 +4,7 @@
 ]>
 
 <perifericos>
-   <periferico>impresora</periferico>
-   <periferico>monitor</periferico>
-   <periferico>teclado</periferico>
+Impresora
+monitor
+teclado
 </perifericos>

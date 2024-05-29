@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:imagen="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>http://www.example.com/index.html</loc>
         <lastmod>2024-05-01</lastmod>
@@ -12,28 +12,28 @@
     <url>
         <loc>http://www.example.com/imagenes/impresora.gif</loc>
         <lastmod>2024-04-26</lastmod>
-        <imagen:imagen>
-            <imagen:loc>http://www.example.com/imagenes/impresora.gif</imagen:loc>
-            <imagen:titulo>Impresora</imagen:titulo>
-        </imagen:imagen>
+        <image:image>
+            <image:loc>http://www.example.com/imagenes/impresora.gif</image:loc>
+            <image:title>Impresora</image:title>
+        </image:image>
     </url>
     <url>
         <loc>http://www.example.com/imagenes/monitor.gif</loc>
         <lastmod>2024-04-25</lastmod>
-        <imagen:imagen>
-            <imagen:loc>http://www.example.com/imagenes/monitor.gif</imagen:loc>
-            <imagen:titulo>Monitor</imagen:titulo>
-        </imagen:imagen>
+        <image:image>
+            <image:loc>http://www.example.com/imagenes/monitor.gif</image:loc>
+            <image:title>Monitor</image:title>
+        </image:image>
     </url>
     <url>
         <loc>http://www.example.com/imagenes/teclado.gif</loc>
         <lastmod>2024-04-24</lastmod>
-        <imagen:imagen>
-            <imagen:loc>http://www.example.com/imagenes/teclado.gif</imagen:loc>
-            <imagen:titulo>Teclado</imagen:titulo>
-        </imagen:imagen>
+        <image:image>
+            <image:loc>http://www.example.com/imagenes/teclado.gif</image:loc>
+            <image:title>Teclado</image:title>
+        </image:image>
     </url>
-        <url>
+    <url>
         <loc>http://www.example.com/productos/impresora.html</loc>
         <lastmod>2024-04-29</lastmod>
     </url>

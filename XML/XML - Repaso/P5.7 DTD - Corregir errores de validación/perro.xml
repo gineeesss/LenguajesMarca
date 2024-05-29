@@ -6,6 +6,6 @@
 ]>
 
 <perro>
-  <nombre>Pancho</nombre>
   <edad>8</edad>
+  <nombre>Pancho</nombre>
 </perro>

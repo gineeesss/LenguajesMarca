@@ -1,0 +1,30 @@
+1. Nombre de los módulos del ciclo "Sistemas Microinformáticos y Redes" (en
+la expresión final no deben aparecer las siglas SMR):
+Aplicaciones web
+
+//modulo[ciclo=//ciclos/ciclo[nombre="Sistemas Microinformáticos y Redes"]/@id]/nombre
+
+2. Nombre de los ciclos que incluyen el módulo "Lenguajes de marcas y
+sistemas de gestión de información":
+Administración de Sistemas Informáticos en Red
+Desarrollo de Aplicaciones Web
+
+//ciclo[@id=//modulo[nombre="Lenguajes de marcas y sistemas de gestión de información"]/ciclo]/nombre
+
+3. Nombre de los módulos de ciclos de Grado Superior:
+Gestión de bases de datos
+Lenguajes de marcas y sistemas de gestión de información
+Implantación de aplicaciones web
+
+//modulo[ciclo=//ciclo[grado="Superior"]/@id]/nombre
+
+4. Nombre de los módulos de ciclos cuyo título se aprobó en 2008:
+Aplicaciones web
+
+//modulo[ciclo=//ciclo[decretoTitulo[@año="2008"]]/@id]/nombre
+
+5. Grado de los ciclos con módulos de primer curso:
+Superior
+Superior
+
+//ciclo[@id=//modulo[curso=1]/ciclo]/grado

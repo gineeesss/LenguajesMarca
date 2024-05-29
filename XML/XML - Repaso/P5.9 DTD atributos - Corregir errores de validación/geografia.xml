@@ -4,6 +4,7 @@
    <!ELEMENT paises (pais)*>
       <!ELEMENT pais (#PCDATA)>
          <!ATTLIST pais codpais ID #REQUIRED>
+
    <!ELEMENT ciudades (ciudad)*>
       <!ELEMENT ciudad (#PCDATA)>
          <!ATTLIST ciudad pais IDREF #IMPLIED>
@@ -11,16 +12,16 @@
 
 <geografia>
    <paises>
-      <pais codpais="1">Argentina</pais>
-      <pais codpais="2">Austria</pais>
-      <pais codpais="3">Japón</pais>
-      <pais codpais="4">Noruega</pais>
+      <pais codpais="a1">Argentina</pais>
+      <pais codpais="a2">Austria</pais>
+      <pais codpais="a3">Japón</pais>
+      <pais codpais="a4">Noruega</pais>
    </paises>
    <ciudades>
-      <ciudad pais="3">Osaka</ciudad>
-      <ciudad>Oslo</ciudad>
-      <ciudad pais="">Sevilla</ciudad>
-      <ciudad pais="3">Tokio</ciudad>
-      <ciudad pais="2">Viena</ciudad>
+      <ciudad pais="a3">Osaka</ciudad>
+      <ciudad pais="a4">Oslo</ciudad>
+      <ciudad >Sevilla</ciudad>
+      <ciudad pais="a3">Tokio</ciudad>
+      <ciudad pais="a2">Viena</ciudad>
    </ciudades>
 </geografia>
