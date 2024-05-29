@@ -11,3 +11,15 @@ function inicio(){
     }
 }
 setInterval(1000,inicio);
+
+function changePlayerColor(){
+    const botones = document.querySelectorAll('#botones button');
+    for (let i = 0; i < botones.length; i++){
+        if(currPlayer == jugadorAmarillo){
+            botones[i].className = "btn btn-success";
+        }
+        else{
+            botones[i].className = "btn btn-danger";
+        }
+    }
+}

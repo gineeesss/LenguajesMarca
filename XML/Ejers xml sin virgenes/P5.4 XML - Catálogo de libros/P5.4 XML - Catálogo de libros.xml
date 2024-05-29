@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo [
+	<!ELEMENT catalogo (categoria+)>
+	<!ELEMENT categoria (libro+)> 
+	<!ELEMENT libro (titulo,autor,precio,publicacion)>
+	<!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT autor (#PCDATA)>
+	<!ELEMENT precio (#PCDATA)>
+	<!ELEMENT publicacion (#PCDATA)>
+]>
+<catalogo>
+    <categoria nombre="Ciencia Ficción">
+        <libro precio="20.00" publicacion="1965">
+            <titulo>&quot;Dune&quot;</titulo>
+            <autor>Frank Herbert</autor>
+        </libro>
+        <libro precio="15.00" publicacion="1949">
+            <titulo>&quot;1984&quot;</titulo>
+            <autor>George Orwell</autor>
+        </libro>
+    </categoria>
+    <categoria nombre="Misterio">
+        <libro precio="18.00" publicacion="2003">
+            <titulo>&quot;El Código Da Vinci&quot;</titulo>
+            <autor>Dan Brown</autor>
+        </libro>
+        <libro precio="12.00" publicacion="1892">
+            <titulo>&quot;Sherlok Holmes&quot;</titulo>
+            <autor>Arthur Conan Doyle</autor>
+        </libro>
+    </categoria>
+</catalogo>

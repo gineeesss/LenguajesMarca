@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo [
+    <!ELEMENT catalogo (categorias,libros)>
+    <!ELEMENT categorias (categoria)*>
+    <!ELEMENT categoria (nombre)>
+        <!ATTLIST categoria ID ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT libros (libro)*>
+    <!ELEMENT libro (autor,precio,publicacion)>
+        <!ATTLIST libro nombre CDATA #REQUIRED>
+        <!ATTLIST libro categoria IDREF #REQUIRED>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT publicacion (#PCDATA)>
+]>
+<catalogo>
+    <categorias>
+        <categoria ID="cf">
+            <nombre>Ciencia Ficcion</nombre>
+        </categoria>
+        <categoria ID="m">
+            <nombre>Misterio</nombre>
+        </categoria>
+    </categorias>
+    <libros>
+        <libro nombre="Dune" categoria="cf">
+            <autor>Frank Herbert</autor>
+            <precio>20.00</precio>
+            <publicacion>1965</publicacion>
+        </libro>
+        <libro nombre="1984" categoria="cf">
+            <autor>George Orwell</autor>
+            <precio>15.00</precio>
+            <publicacion>1949</publicacion>
+        </libro>
+        <libro nombre="Sherlock Holmes" categoria="m">
+            <autor>Arthur Conan Doyle</autor>
+            <precio>12.00</precio>
+            <publicacion>1892</publicacion>
+        </libro>
+    </libros>
+</catalogo>

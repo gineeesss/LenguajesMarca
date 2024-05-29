@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuracion [
+    <!ELEMENT configuracion (autoinicio,pathFiles,pathUsers,user*)>
+    <!ELEMENT autoinicio (#PCDATA)>
+    <!ELEMENT pathFiles (#PCDATA)>
+    <!ELEMENT pathUsers (#PCDATA)>
+    <!ELEMENT user (nombre,fullscreen,modo)>
+        <!ATTLIST user ID ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT fullscreen (#PCDATA)>
+    <!ELEMENT modo (#PCDATA)>
+]>
+<configuracion>
+    <autoinicio>true</autoinicio>
+    <pathFiles>C://app/files</pathFiles>
+    <pathUsers>C://app/users</pathUsers>
+    <user ID="a1">
+        <nombre>Javier</nombre>
+        <fullscreen>false</fullscreen>
+        <modo>black</modo>
+    </user>
+    <user ID="a2">
+        <nombre>Elena</nombre>
+        <fullscreen>true</fullscreen>
+        <modo>black</modo>
+    </user>
+</configuracion>
