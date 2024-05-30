@@ -1,0 +1,56 @@
+<CajaExamen>
+    <Pokemon Pokedex="025">
+        <Nombre>Pikachu</Nombre>
+        <Tipo>Eléctrico</Tipo>
+        <Evolucion>Pichu</Evolucion>
+        <Habilidades>
+            <Habilidad>Electricidad estática</Habilidad>
+            <Habilidad>Pararrayos</Habilidad>
+        </Habilidades>
+    </Pokemon>
+    <Pokemon Pokedex="001">
+        <Nombre>Bulbasaur</Nombre>
+        <Tipo>Planta/Veneno</Tipo>
+        <Evolucion />
+        <Habilidades>
+            <Habilidad>Clorofila</Habilidad>
+            <Habilidad>Superagente</Habilidad>
+        </Habilidades>
+    </Pokemon>
+    <Pokemon Pokedex="006">
+        <Nombre>Charizard</Nombre>
+        <Tipo>Fuego/Volador</Tipo>
+        <Evolucion>Charmeleon</Evolucion>
+        <Habilidades>
+            <Habilidad>Mar Llamas</Habilidad>
+            <Habilidad>Poder Solar</Habilidad>
+        </Habilidades>
+    </Pokemon>
+    <Pokemon Pokedex="094">
+        <Nombre>Gengar</Nombre>
+        <Tipo>Fantasma/Veneno</Tipo>
+        <Evolucion>Haunter</Evolucion>
+        <Habilidades>
+            <Habilidad>Levitación</Habilidad>
+            <Habilidad>Cuerpo maldito</Habilidad>
+        </Habilidades>
+    </Pokemon>
+    <Pokemon Pokedex="150">
+        <Nombre>Mewtwo</Nombre>
+        <Tipo>Psíquico</Tipo>
+        <Evolucion />
+        <Habilidades>
+            <Habilidad>Presión</Habilidad>
+            <Habilidad>Cambio de forma</Habilidad>
+        </Habilidades>
+    </Pokemon>
+    <Pokemon Pokedex="133">
+        <Nombre>Eevee</Nombre>
+        <Tipo>Normal</Tipo>
+        <Evolucion />
+        <Habilidades>
+            <Habilidad>Adaptable</Habilidad>
+            <Habilidad>Anticipación</Habilidad>
+        </Habilidades>
+    </Pokemon>
+</CajaExamen>

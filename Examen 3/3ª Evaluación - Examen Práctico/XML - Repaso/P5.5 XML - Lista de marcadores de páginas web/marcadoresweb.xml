@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE marcadores [
+    <!ELEMENT marcadores (marcador*)>
+    <!ELEMENT marcador (pagina,descripcion,url)>
+    <!ELEMENT pagina (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+]>
+<marcadores>
+    <marcador>
+        <pagina>Abrirllave</pagina>
+        <descripcion>Tutoriales de informática.</descripcion>
+        <url>http://www.abrirllave.com/</url>
+    </marcador>
+    <marcador>
+        <pagina>Wikipedia</pagina>
+        <descripcion>La enciclopedia libre.</descripcion>
+        <url>http://www.wikipedia.org/</url>
+    </marcador>
+    <marcador>
+        <pagina>W3C</pagina>
+        <descripcion>World Wide Web Consortium.</descripcion>
+        <url>http://www.w3.org/</url>
+    </marcador>
+</marcadores>

@@ -1,0 +1,36 @@
+1.- Extraer el nodo texto de todos los elementos peso: 
+480 
+1.8 
+50 
+
+//peso/text()
+
+
+
+2.- Extraer el nodo elemento peso del último producto: 
+<peso unidad="g">50</peso> 
+
+ //producto[last()]/peso
+
+
+
+3.- Extraer el nodo elemento peso del elemento cuyo código sea AAA-111: 
+<peso unidad="g">480</peso> 
+
+//producto[@codigo="AAA-111"]/peso
+
+
+
+4.- Extraer el atributo código de los productos cuyo nombre sea «Monitor»: 
+codigo="ACD-981" 
+
+//producto[nombre/text()="Monitor"]/@codigo
+
+
+
+5.- Extraer el atributo código de los productos que pesen más de un cuarto de 
+kilo: 
+codigo="AAA-111" 
+codigo="ACD-981"
+
+//producto[(peso/@unidad="kg" and peso/text()>"0.25")  or (peso/@unidad="g" and peso/text()>"250") ]/@codigo
